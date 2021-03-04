@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-dark bg-dark shadow-sm">
+<nav id="navbar" class="navbar navbar-expand-md navbar-dark bg-dark shadow-sm">
     <div class="container">
 
         <a class="navbar-brand" href="/">
@@ -10,18 +10,21 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!-- Left Side Of Navbar -->
-            <ul class="navbar-nav mr-auto">
-                    <li>
-                       <a href="/" class="nav-link ml-5">Home</a>
+            <ul class="navbar-nav ml-auto mr-5">
+                    <li class="mr-3">
+                       <a href="/" class="nav-link">Home</a>
                     </li>
-                    <li>
-                       <a href="" class="nav-link ml-3">Cars</a>
+                    <li class="mr-3">
+                       <a href="" class="nav-link">Cars</a>
                     </li>
-                    <li>
-                       <a href="" class="nav-link ml-3">Computers</a>
+                    <li class="mr-3">
+                       <a href="" class="nav-link">Computers</a>
                     </li>
-                    <li>
+                    <li class="mr-3">
                         <a href="" class="nav-link ml-3">Phones</a>
+                    </li>
+                    <li class="mr-3">
+                        <a href="" class="nav-link ml-3">Contact</a>
                     </li>
             </ul>
 
@@ -65,5 +68,10 @@
             </ul>
         </div>
     </div>
+</nav>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark shadow-sm pt-3 pb-3">
+   <div class="container">
+       @yield('content-title')
+   </div>
 </nav>
 
