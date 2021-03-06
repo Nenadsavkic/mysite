@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-    Welcome
+    O meni
 @endsection
 
 @section('content-title')
@@ -15,26 +15,53 @@
 <div class="container mb-5">
 
     <article class="mt-5">
-        <h2>Nesto o meni</h2>
+        <h2>Nešto o meni</h2>
         <div class="row">
             <div class="col-md-8 mt-5">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo earum dolorum odit ullam. Maiores deleniti asperiores consequuntur odio veritatis nihil officiis at libero corrupti eius laborum, expedita eos dolor quasi.
-                    Cupiditate laborum ullam, quae laudantium iure cumque assumenda impedit perspiciatis nostrum et quasi fugiat, odio est. Sequi, doloribus delectus deleniti architecto recusandae voluptas minus. Eveniet et dicta iure ullam mollitia.
-                    Quisquam eaque eveniet quidem a. Qui dolores ea aut voluptates magnam fugiat. At minus, explicabo distinctio asperiores error eius quisquam, aliquid eaque fugiat magni illum rerum, nam id iure delectus?
-                    Error reiciendis ad repellat possimus a nulla dolores nihil deserunt cum illum magni eum neque doloremque similique omnis quis architecto, culpa unde consectetur eaque libero maiores qui beatae natus. Recusandae.
-                    Eaque eligendi laudantium sapiente praesentium asperiores maiores quas quaerat, voluptatem quia illo recusandae, earum voluptate minima vitae repellendus, sit quidem voluptas. Veniam assumenda earum ex, necessitatibus maxime exercitationem impedit recusandae?
-                    Ab debitis, provident, quo voluptates unde in labore ea placeat eum possimus enim deleniti eligendi eaque eius quas! Voluptates iusto earum accusantium vel nulla aliquam nesciunt maiores aliquid magnam similique.
-                    Earum placeat quis maiores, quibusdam ea blanditiis adipisci tempora, alias temporibus aut quos quidem ut fuga ducimus debitis harum id suscipit nemo. Dolorum error ea, aperiam sunt delectus ratione quidem.
-                    Exercitationem  enim ea sunt. Cumque!</p>
-                    <p>Mozete me kontaktirati putem maila: <span>savkicn@gmail.com</span></p>
-                    <p>ili putem telefona: <span> 063 643 813</span></p>
+
+                <p>Poštovanje, ja sam Nenad Savkić, ovaj sajt sam osmislio u cilju predstavljanja
+                    sebe i svog znanja iz oblasti programiranja. Završio sam srednju mašinsku školu
+                    , smer "Pogonski tehničar", radio sam razne poslove u životu do sada, radio sam
+                 kao operater na CNC mašini u Brodogradilištu, i magacinske poslove, zatim u obezbedjenju,
+                a trenutno sam zaposlen u jednoj firmi koja se bavi proizvodnjom nameštaja.
+                Ali baveći se ovim poslovima, nikada nisam video sebe dugoročno u tim profesijama,
+                nisam osetio nikakvu ličnu satisfakciju, niti mogućnost rasta i napredovanja u kompaniji.
+                Pre oko 2 godine, iz čiste radoznalosti, napravio sam svoje prve korake iz oblasti programiranja.
+                Bilo je to prilično nespretno, da tako kažem, jer nisam znao ni odakle bih trebao početi.
+                Niko mi nije rekao da pre učenja Php-a, treba prvo savladati HTML i CSS. Kao što rekoh
+                prvi koraci bili su iz radoznalosti, da vidim da li to meni leži, da li ja to mogu da naučim,
+                a onda sam video da se to meni sviđa, i da bih možda mogao spojiti lepo i korisno.
+
+                Zatim sam našao
+                odličnu online školu, mada od reklame na ovom sajtu neće imati neku vajdu al ajde reći ću
+                da je to "Krojačeva škola". Tako sam se učeći online, upoznao sa osnovama web dizajna i programiranja.
+                Trenutno sam se fokusirao na Php, MySql i Laravel, i ovaj sajt je pravljen upravo u Laravel-u, ali takodje
+                poznajem HTML, CSS, Bootstrap, JavaScript, jQuery, WordPress, Git.
+                </p>
+                <p> Ako Vi gledate ovaj sajt, to verovatno znači da sam konkurisao za neku poziciju u
+                    Vašoj kompaniji, pa eto, čitajući ove redove, možete steći neke prve utiske o meni
+                     i proceniti da li moja biografija zadovoljava potrebe tražene pozicije. </p>
+                <p>U nadi da ćemo ostvariti uspešnu saradnju.</p>
+                <p>Srdačno,</p><br>
+                <p>Nenad Savkić</p>
+
+
+
             </div>
             <div class="col-md-4 mt-5">
-               <img  src="/me/ja.jpg" alt="ja" class="img-fluid img-thumbnail rounded ">
+               <img  src="/me/ja.jpg" alt="ja" class="img-fluid img-thumbnail rounded p-3 ">
             </div>
         </div>
+
+
     </article>
+    <div class=" container row mt-5 contact">
+        <div class="col-6 offset-3 mt-3 ">
+            <p>Mozete me kontaktirati putem maila: <span>savkicn@gmail.com</span></p>
+                   <p>ili putem telefona: <span> 063 643 813</span></p>
+       </div>
+    </div>
+
 </div>
 
 @endsection

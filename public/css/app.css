@@ -10012,3 +10012,26 @@ h3 {
 #navbar {
   border-bottom: 1px solid white;
 }
+
+.contact {
+  border: 2px solid yellow;
+  margin-left: 3px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.contact p span {
+  color: brown;
+}
+
+p {
+  font-size: 17px;
+}
+
+.carousel {
+  margin: -15px;
+}
+
+.carousel img {
+  height: 600px;
+}

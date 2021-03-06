@@ -11,21 +11,30 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!-- Left Side Of Navbar -->
             <ul class="navbar-nav ml-auto mr-5">
-                    <li class="mr-3">
-                       <a href="/" class="nav-link">Home</a>
+
+                    <li class=" nav-item mr-3">
+                        <a href="/" class="nav-link">O meni</a>
+                     </li>
+                     <li class=" nav-item mr-3">
+                        <a href="#" class="nav-link">About me</a>
+                     </li>
+                     <li class=" nav-item mr-3">
+                        <a href="{{ route('home') }}" class="nav-link">Home</a>
+                     </li>
+                     <li class=" nav-item mr-3">
+                        <a href="{{ route('cars') }}" class="nav-link">Cars</a>
+                     </li>
+                     <li class=" nav-item mr-3">
+                        <a href="{{ route('computers') }}" class="nav-link">Computers</a>
+                     </li>
+                     <li class=" nav-item mr-3">
+                        <a href="{{ route('phones') }}" class="nav-link">Phones</a>
+                     </li>
+
+                    <li class=" nav-item mr-3">
+                       <a href="{{ route('contactForm') }}" class="nav-link">Contact</a>
                     </li>
-                    <li class="mr-3">
-                       <a href="" class="nav-link">Cars</a>
-                    </li>
-                    <li class="mr-3">
-                       <a href="" class="nav-link">Computers</a>
-                    </li>
-                    <li class="mr-3">
-                        <a href="" class="nav-link ml-3">Phones</a>
-                    </li>
-                    <li class="mr-3">
-                        <a href="" class="nav-link ml-3">Contact</a>
-                    </li>
+
             </ul>
 
             <!-- Right Side Of Navbar -->
@@ -54,9 +63,6 @@
                                onclick="event.preventDefault();
                                              document.getElementById('logout-form').submit();">
                                 {{ __('Logout') }}
-                            </a>
-                            <a href="" class="dropdown-item">
-                                My profile
                             </a>
 
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
