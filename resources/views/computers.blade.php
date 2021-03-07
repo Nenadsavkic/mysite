@@ -12,6 +12,9 @@
 
 @section('main')
 
+@include('layouts.partials.carouselComputers')
+
+
 <div class="container mb-5">
 
 

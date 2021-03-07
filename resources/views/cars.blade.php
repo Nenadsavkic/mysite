@@ -12,6 +12,8 @@
 
 @section('main')
 
+@include('layouts.partials.carouselCars')
+
 <div class="container mb-5">
 
 
