@@ -10035,3 +10035,11 @@ p {
 .carousel img {
   height: 600px;
 }
+
+.image-upload input {
+  display: none;
+}
+
+.image-upload img:hover {
+  cursor: pointer;
+}

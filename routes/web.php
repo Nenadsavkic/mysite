@@ -19,8 +19,7 @@ Auth::routes();
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'welcome'])->name('welcome');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/home-userImg', [App\Http\Controllers\HomeController::class, 'index'])
-->name('home.userImg');
+
 Route::get('/home-messages', [App\Http\Controllers\HomeController::class, 'showMessages'])
 ->name('home.showMessages');
 Route::get('/cars', [App\Http\Controllers\CarsController::class, 'index'])->name('cars');
@@ -28,5 +27,9 @@ Route::get('/computers', [App\Http\Controllers\ComputersController::class, 'inde
 Route::get('/phones', [App\Http\Controllers\PhonesController::class, 'index'])->name('phones');
 Route::get('/contact', [App\Http\Controllers\HomeController::class, 'contactForm'])
 ->name('contactForm');
+
+
+Route::post('/home-saveImg', [App\Http\Controllers\HomeController::class, 'saveImg'])
+->name('home.saveImg');
 
 
