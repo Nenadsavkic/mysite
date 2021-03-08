@@ -1,10 +1,11 @@
 <a href="">
 
-    <img src="/images/cover_image/noimage.jpg" alt="user_image" class="img-fluid img-thumbnail"><br><br>
+    <img  src="/images/user_image/ja.jpg" alt="user_image" class=" img-thumbnail"><br><br>
 
 </a>
-
-<a href="" class="btn btn-primary form-control">Add new ad</a>
+<a href="{{ route('home.userImg') }}" class="btn btn-warning form-control">
+    Change profile image</a>
+<a href="" class="btn btn-primary form-control mt-2">Add new ad</a>
 <a href="{{ route('home') }}" class="btn btn-secondary form-control mt-2">Your ads</a>
 
 <a href="{{ route('home.showMessages') }}" class="btn btn-secondary form-control mt-2">

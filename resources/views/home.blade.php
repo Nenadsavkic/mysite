@@ -2,12 +2,12 @@
 @extends('layouts.master')
 
 @section('title')
-    Your homepage
+    {{ $user->name }} homepage
 @endsection
 
 @section('content-title')
     <div class="container justify-content-center">
-        <h1 class="text-light">Your homepage</h1>
+        <h1 class="text-light">{{ $user->name }} homepage</h1>
     </div>
 @endsection
 

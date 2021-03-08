@@ -19,6 +19,8 @@ Auth::routes();
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'welcome'])->name('welcome');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home-userImg', [App\Http\Controllers\HomeController::class, 'index'])
+->name('home.userImg');
 Route::get('/home-messages', [App\Http\Controllers\HomeController::class, 'showMessages'])
 ->name('home.showMessages');
 Route::get('/cars', [App\Http\Controllers\CarsController::class, 'index'])->name('cars');
