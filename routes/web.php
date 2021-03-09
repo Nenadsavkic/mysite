@@ -27,6 +27,8 @@ Route::get('/computers', [App\Http\Controllers\ComputersController::class, 'inde
 Route::get('/phones', [App\Http\Controllers\PhonesController::class, 'index'])->name('phones');
 Route::get('/contact', [App\Http\Controllers\HomeController::class, 'contactForm'])
 ->name('contactForm');
+Route::get('/user-deleteImg/{id}', [App\Http\Controllers\UsersController::class, 'deleteImg'])
+->name('user.deleteImg');
 
 
 Route::post('/user-saveImg/{id}', [App\Http\Controllers\UsersController::class, 'saveImg'])
