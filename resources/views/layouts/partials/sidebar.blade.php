@@ -1,16 +1,12 @@
 
-<div class="image-upload">
-    <form action="{{ route('home.saveImg') }}" method="post" enctype="multipart/form-data">
-        @csrf
-        <label for="user_image">
-            <img  src="/images/user_image/ja.jpg" alt="user_image" class=" img-thumbnail" title="Add new image"><br><br>
-           </label>
+<img   src="{{ asset('/storage/images/'.Auth::user()->user_image) }}" alt="user_image" class=" img-thumbnail" title="Add new image"><br><br>
+<div class="card">
+    <form action="{{ route('user.saveImg',['id'=>$user->id]) }}" method="post" enctype="multipart/form-data">
+     @csrf
            <input id="user_image" name="user_image" type="file" >
-           <button type="submit">add image</button>
+           <button type="submit" class="btn btn-warning form-control mt-2">Add new image</button>
     </form>
-
 </div>
-
 
 <a href="" class="btn btn-primary form-control mt-2">Add new ad</a>
 <a href="{{ route('home') }}" class="btn btn-secondary form-control mt-2">Your ads</a>

@@ -26,8 +26,10 @@ class HomeController extends Controller
     public function index()
     {
         $user = Auth::user();
+        $user_image = Auth::user()->user_image;
 
-        return view('home',compact('user'));
+
+        return view('home',compact('user','user_image'));
     }
 
     public function welcome()

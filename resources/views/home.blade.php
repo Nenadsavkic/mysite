@@ -18,7 +18,11 @@
             @include('layouts.partials.sidebar')
         </div>
         <div class="col-md-6 offset-1">
-            <div class="row">
+            <div class="ml-5">
+                <h2 class="ml-5">Here you can see all your ads.</h2>
+            </div>
+
+            <div class="row mt-5    ">
                 {{-- card1 --}}
                 <div class="col-md-6">
                     <div class="card">

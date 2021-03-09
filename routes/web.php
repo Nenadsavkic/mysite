@@ -29,7 +29,7 @@ Route::get('/contact', [App\Http\Controllers\HomeController::class, 'contactForm
 ->name('contactForm');
 
 
-Route::post('/home-saveImg', [App\Http\Controllers\HomeController::class, 'saveImg'])
-->name('home.saveImg');
+Route::post('/user-saveImg/{id}', [App\Http\Controllers\UsersController::class, 'saveImg'])
+->name('user.saveImg');
 
 
