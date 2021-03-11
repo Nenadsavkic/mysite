@@ -10043,3 +10043,11 @@ p {
 .image-upload img:hover {
   cursor: pointer;
 }
+
+.nav-image {
+  border-radius: 25%;
+}
+
+.sidebar {
+  margin-left: 70px;
+}

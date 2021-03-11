@@ -16,7 +16,7 @@
 </div>
 <a href="{{ route('user.deleteImg', ['id'=>$user->id]) }}" class="btn btn-danger form-control mt-2">Delete profile image</a>
 
-<a href="" class="btn btn-primary form-control mt-2">Add new ad</a>
+<a href="{{ route('home.showAdForm') }}" class="btn btn-primary form-control mt-2">Create new ad</a>
 <a href="{{ route('home') }}" class="btn btn-secondary form-control mt-2">Your ads</a>
 
 <a href="{{ route('home.showMessages') }}" class="btn btn-secondary form-control mt-2">

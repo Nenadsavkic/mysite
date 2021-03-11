@@ -29,9 +29,13 @@ Route::get('/contact', [App\Http\Controllers\HomeController::class, 'contactForm
 ->name('contactForm');
 Route::get('/user-deleteImg/{id}', [App\Http\Controllers\UsersController::class, 'deleteImg'])
 ->name('user.deleteImg');
+Route::get('/home-ad-form', [App\Http\Controllers\HomeController::class, 'showAdForm'])
+->name('home.showAdForm');
 
 
 Route::post('/user-saveImg/{id}', [App\Http\Controllers\UsersController::class, 'saveImg'])
 ->name('user.saveImg');
+Route::post('/home-save-ad', [App\Http\Controllers\HomeController::class, 'saveAd'])
+->name('home.saveAd');
 
 
