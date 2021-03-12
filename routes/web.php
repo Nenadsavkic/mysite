@@ -19,6 +19,11 @@ Auth::routes();
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'welcome'])->name('welcome');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home-single-ad/{id}', [App\Http\Controllers\HomeController::class, 'showSingleAd'])
+->name('home.singleAd');
+
+
+
 
 Route::get('/home-messages', [App\Http\Controllers\HomeController::class, 'showMessages'])
 ->name('home.showMessages');
@@ -31,11 +36,23 @@ Route::get('/user-deleteImg/{id}', [App\Http\Controllers\UsersController::class,
 ->name('user.deleteImg');
 Route::get('/home-ad-form', [App\Http\Controllers\HomeController::class, 'showAdForm'])
 ->name('home.showAdForm');
+Route::get('/home-editAd-form/{id}', [App\Http\Controllers\HomeController::class, 'editAdForm'])
+->name('home.adEditForm');
+Route::get('/home-delete-user', [App\Http\Controllers\HomeController::class, 'deleteUser'])
+->name('home.deleteUser');
+
+
 
 
 Route::post('/user-saveImg/{id}', [App\Http\Controllers\UsersController::class, 'saveImg'])
 ->name('user.saveImg');
+
 Route::post('/home-save-ad', [App\Http\Controllers\HomeController::class, 'saveAd'])
 ->name('home.saveAd');
 
+Route::delete('/home-ad-delete/{id}', [App\Http\Controllers\HomeController::class, 'adDelete'])
+->name('home.adDelete');
+
+Route::post('/home-save-editedAd/{id}', [App\Http\Controllers\HomeController::class, 'saveEditedAd'])
+->name('home.saveEditedAd');
 

@@ -22,44 +22,27 @@
                 <h2 class="ml-5">Here you can see all your ads.</h2>
             </div>
 
-            <div class="row mt-5    ">
-                {{-- card1 --}}
-                <div class="col-md-6 main-content">
-                    <div class="card">
-                        <div class="card-header">{{ __('Dashboard') }}</div>
-
-                        <div class="card-body">
-                            @if (session('status'))
-                                <div class="alert alert-success" role="alert">
-                                    {{ session('status') }}
-                                </div>
-                            @endif
-
-                            {{ __('You are logged in!') }}
-                        </div>
-                    </div>
-
-                </div>
-                {{-- card1 end --}}
-
-                {{-- card 2 --}}
-                <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-header">{{ __('Dashboard') }}</div>
-
-                        <div class="card-body">
-                            @if (session('status'))
-                                <div class="alert alert-success" role="alert">
-                                    {{ session('status') }}
-                                </div>
-                            @endif
-
-                            {{ __('You are logged in!') }}
-                        </div>
-                    </div>
-
-                </div>
-                {{-- card 2 end --}}
+            <div class="row mt-5">
+                @foreach ($user_ads as $ad)
+                <div class="col-md-6 main-content mt-3">
+                    {{-- card --}}
+                     <div class="card text-center">
+                         <div class="card-header">
+                            {{ $ad->category->name }}
+                         </div>
+                         <div class="card-body">
+                           <h3 class="card-title">{{ $ad->title }}</h3>
+                           <p class="card-text mt-4">{{ $ad->body }}</p>
+                           <a href="{{ route('home.singleAd',['id' => $ad->id]) }}" class="btn btn-primary">Show more</a>
+                         </div>
+                         <div class="card-footer text-muted">
+                            <button class="btn btn-primary btn-small float-left">Price: {{ $ad->price }} eur</button>
+                            <button class="btn btn-warning btn-small float-right">Created: {{ $ad->created_at->format('d M Y') }}</button>
+                         </div>
+                     </div>
+                    {{-- card end --}}
+                 </div>
+                @endforeach
 
             </div>
 

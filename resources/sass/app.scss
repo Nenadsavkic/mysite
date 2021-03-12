@@ -17,6 +17,12 @@
 
     border-bottom: 1px solid white;
 }
+#counter{
+
+    background: red;
+    border-radius: 50%;
+
+}
 .contact{
     border: 2px solid yellow;
     margin-left: 3px;
@@ -49,6 +55,12 @@ p {
 }
 .sidebar{
     margin-left: 70px;
+}
+.card-text {
+    height: 100px;
+}
+.singleAdImg img{
+    max-height: 200px;
 }
 
 
