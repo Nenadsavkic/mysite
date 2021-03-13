@@ -22,20 +22,20 @@
 
     <div class="row">
       @foreach ($phones as $phone)
-
+        <a class="text-decoration-none text-muted" href="{{ route('ad.singleAd', ['id'=>$phone->id]) }}">
            <div class="col-md-4 pl-5">
             <div class="card text-center mt-5 " style="width: 25rem;">
                 <img src="/images/add_images/{{ $phone->image1 }}" class="card-img-top mainAddImg" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">{{ $phone->title }}</h5>
                   <p class="card-text">{{ $phone->body }}</p>
-                  <a href="{{ route('ad.singleAd', ['id'=>$phone->id]) }}" class="btn btn-primary float-left ">Show more</a>
-                  <button class="btn btn-success float-right">Views: 200</button>
+                  <button class="btn btn-primary float-left ">Owner: {{ $phone->user->name }}</button>
+                  <button class="btn btn-danger float-right">Price: {{ $phone->price }} eur</button>
 
                 </div>
               </div>
            </div>
-
+        </a>
       @endforeach
     </div>
 

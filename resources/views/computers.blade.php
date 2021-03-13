@@ -23,19 +23,19 @@
 
     <div class="row">
       @foreach ($computers as $computer)
-
+        <a class="text-decoration-none text-muted" href="{{ route('ad.singleAd', ['id'=>$computer->id]) }}">
            <div class="col-md-4 pl-5">
             <div class="card text-center mt-5 " style="width: 25rem;">
                 <img src="/images/add_images/{{ $computer->image1 }}" class="card-img-top mainAddImg" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">{{ $computer->title }}</h5>
                   <p class="card-text">{{ $computer->body }}</p>
-                  <a href="{{ route('ad.singleAd', ['id'=>$computer->id]) }}" class="btn btn-primary float-left">Show more</a>
-                  <button class="btn btn-success float-right">Views: 200</button>
+                  <button class="btn btn-primary float-left">Owner: {{ $computer->user->name }}</button>
+                  <button class="btn btn-danger float-right">Price: {{ $computer->price }} eur</button>
                 </div>
               </div>
            </div>
-
+        </a>
       @endforeach
     </div>
 
