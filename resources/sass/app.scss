@@ -7,7 +7,6 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
-
 #logo{
     width: 50px;
     height: 50px;
@@ -32,6 +31,11 @@
 .contact p span{
     color: brown;
 }
+.main-div {
+    width: 100%;
+    padding: 0;
+}
+
 p {
     font-size: 17px;
 }
@@ -62,6 +66,16 @@ p {
 .singleAdImg img{
     max-height: 200px;
 }
+
+.card-img-top{
+    max-height: 350px !important;
+}
+
+.category-img {
+    max-height: 300px;
+}
+
+
 
 
 

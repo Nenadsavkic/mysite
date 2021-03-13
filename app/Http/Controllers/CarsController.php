@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Ad;
+use App\Models\Category;
 use Illuminate\Http\Request;
 
 class CarsController extends Controller
@@ -13,7 +15,10 @@ class CarsController extends Controller
      */
     public function index()
     {
-        return view('cars');
+        $cars = Ad::all()->where('category_id', 1);
+        //dd($cars);
+
+        return view('cars',['cars'=>$cars]);
     }
 
     /**

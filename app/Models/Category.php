@@ -9,5 +9,10 @@ class Category extends Model
 {
     use HasFactory;
 
+    public function ad()
+    {
+        return $this->belongsTo('\App\Models\Ad');
+    }
+
 }
 

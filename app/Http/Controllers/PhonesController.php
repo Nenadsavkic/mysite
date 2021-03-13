@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Ad;
 use Illuminate\Http\Request;
 
 class PhonesController extends Controller
@@ -13,7 +14,9 @@ class PhonesController extends Controller
      */
     public function index()
     {
-        return view('phones');
+        $phones = Ad::all()->where('category_id', 3);
+
+        return view('phones',['phones' => $phones]);
     }
 
     /**
