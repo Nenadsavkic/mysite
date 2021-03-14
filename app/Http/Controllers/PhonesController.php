@@ -14,7 +14,17 @@ class PhonesController extends Controller
      */
     public function index()
     {
-        $phones = Ad::all()->where('category_id', 3);
+        if (isset(request()->type) && request()->type == 'lower'){
+
+            $phones = Ad::all()->where('category_id', 3)->sortBy('price');
+
+        } elseif(isset(request()->type) && request()->type == 'higher'){
+
+            $phones = Ad::all()->where('category_id', 3)->sortByDesc('price');
+
+        }else{
+            $phones = Ad::all()->where('category_id', 3);
+        }
 
         return view('phones',['phones' => $phones]);
     }

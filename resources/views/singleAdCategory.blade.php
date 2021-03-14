@@ -98,7 +98,7 @@
                         <span class="btn btn-primary float-left"> Owner: {{ $ad->user->name }}</span></h2>
                         <p class="mt-5">{{ $ad->body }}</p>
                         <button class="btn btn-danger float-left mt-5">Price: {{ $ad->price }} eur</button>
-                        <button class="btn btn-primary float-right mt-5"> Views: {{ $ad->counter }} 200</button>
+                        <button class="btn btn-primary float-right mt-5"> Views: {{ $ad->views }}</button>
                         <form action="#" method="post">
 
                         </form>

@@ -38,6 +38,12 @@
                 Trenutno sam se fokusirao na Php, MySql i Laravel, i ovaj sajt je pravljen upravo u Laravel-u, ali takodje
                 poznajem HTML, CSS, Bootstrap, JavaScript, jQuery, WordPress, Git.
                 </p>
+                <p>Ovaj sajt je zamisljen tako da predstavi mene, i moje do sada steceno znanje iz programiranja i web dizajna,
+                    odnosno on pretstavlja moju radnu biografiju, jer ja nemam radnog iskustva u IT-u.</p>
+                <p>Na ovom sajtu mozete pogledati oglase iz kategorije 'Cars', 'Phones' i 'Computers', naravno ovo nisu pravi oglasi
+                    vec samo simulacija jednog takvog sajta, mozete se registrovati kao novi korisnik, lugovati, postaviti sliku na svoj profil,
+                    kreirati novi oglas, editovati svoje postojece oglase, obrisati, itd...
+                </p>
                 <p> Ako Vi gledate ovaj sajt, to verovatno znači da sam konkurisao za neku poziciju u
                     Vašoj kompaniji, pa eto, čitajući ove redove, možete steći neke prve utiske o meni
                      i proceniti da li moja biografija zadovoljava potrebe tražene pozicije. </p>

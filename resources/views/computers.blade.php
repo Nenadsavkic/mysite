@@ -22,6 +22,17 @@
 <div class="container-fluid mb-5 mt-5">
 
     <div class="row">
+        <div class="col-md-6 offset-3">
+            <form action="{{ route('computers') }}">
+                <label for="type">Select Computers by price:</label>
+                <select name="type" class="form-control">
+                    <option value=""></option>
+                    <option value="lower">Price ascending</option>
+                    <option value="higher">Price descending</option>
+                </select>
+                <button type="submit" class="btn btn-secondary mt-1">Apply</button>
+            </form>
+        </div>
       @foreach ($computers as $computer)
         <a class="text-decoration-none text-muted" href="{{ route('ad.singleAd', ['id'=>$computer->id]) }}">
            <div class="col-md-4 pl-5">

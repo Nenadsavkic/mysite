@@ -10,7 +10,10 @@ class AdController extends Controller
      public function index($id)
      {
           $ad = Ad::find($id);
-          //dd($ad);
+          if (auth()->check() && auth()->user()->id !== $ad->user_id) {
+
+              $ad->increment('views');
+          }
 
           return view('singleAdCategory', ['ad' => $ad]);
      }

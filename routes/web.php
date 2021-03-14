@@ -40,6 +40,7 @@ Route::get('/home-editAd-form/{id}', [App\Http\Controllers\HomeController::class
 ->name('home.adEditForm');
 Route::get('/home-delete-user', [App\Http\Controllers\HomeController::class, 'deleteUser'])
 ->name('home.deleteUser');
+
 Route::get('/ad-single-ad/{id}', [App\Http\Controllers\AdController::class, 'index'])
 ->name('ad.singleAd');
 

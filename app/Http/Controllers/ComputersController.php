@@ -14,7 +14,17 @@ class ComputersController extends Controller
      */
     public function index()
     {
-        $computers = Ad::all()->where('category_id', 2);
+        if (isset(request()->type) && request()->type == 'lower'){
+
+            $computers = Ad::all()->where('category_id', 2)->sortBy('price');
+
+        } elseif(isset(request()->type) && request()->type == 'higher'){
+
+            $computers = Ad::all()->where('category_id', 2)->sortByDesc('price');
+
+        }else{
+            $computers = Ad::all()->where('category_id', 2);
+        }
 
         return view('computers',['computers' => $computers]);
 

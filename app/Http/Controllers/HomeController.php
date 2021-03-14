@@ -146,7 +146,7 @@ class HomeController extends Controller
         $ad = Ad::find($id);
         $ad->delete();
 
-        return redirect('home');
+        return redirect('home')->with('message', 'Ad is successfully deleted!');
     }
 
    public function editAdForm(Request $request, $id)

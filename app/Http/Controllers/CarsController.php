@@ -15,8 +15,20 @@ class CarsController extends Controller
      */
     public function index()
     {
-        $cars = Ad::all()->where('category_id', 1);
-        //dd($cars);
+
+
+        if (isset(request()->type) && request()->type == 'lower'){
+
+            $cars = Ad::all()->where('category_id', 1)->sortBy('price');
+
+        } elseif(isset(request()->type) && request()->type == 'higher'){
+
+            $cars = Ad::all()->where('category_id', 1)->sortByDesc('price');
+
+        }else{
+            $cars = Ad::all()->where('category_id', 1);
+        }
+
 
         return view('cars',['cars'=>$cars]);
     }

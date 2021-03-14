@@ -21,27 +21,33 @@
             <div class="ml-5">
                 <h2 class="ml-5">Here you can see all your ads.</h2>
             </div>
+            @if (session())
+               @include('layouts.partials.flashMessages')
+
+            @endif
 
             <div class="row mt-5">
                 @foreach ($user_ads as $ad)
-                <div class="col-md-6 main-content mt-3">
+                {{-- <div class="col-md-4 offset-1 ml-5 main-content mt-3"> --}}
                     {{-- card --}}
-                     <div class="card text-center">
-                         <div class="card-header">
-                            {{ $ad->category->name }}
-                         </div>
-                         <div class="card-body">
-                           <h3 class="card-title">{{ $ad->title }}</h3>
-                           <p class="card-text mt-4">{{ $ad->body }}</p>
-                           <a href="{{ route('home.singleAd',['id' => $ad->id]) }}" class="btn btn-primary">Show more</a>
-                         </div>
-                         <div class="card-footer text-muted">
-                            <button class="btn btn-primary btn-small float-left">Price: {{ $ad->price }} eur</button>
-                            <button class="btn btn-warning btn-small float-right">Created: {{ $ad->created_at->format('d M Y') }}</button>
-                         </div>
-                     </div>
+                    <div class="col-md-6  ">
+                        <a class="text-decoration-none text-muted" href="{{ route('home.singleAd', ['id'=>$ad->id])}}">
+
+                         <div class="card text-center mt-5 " style="width: 22rem;">
+                             <img src="/images/add_images/{{ $ad->image1 }}" class="card-img-top img-fluid" alt="...">
+                             <div class="card-body">
+                               <h5 class="card-title">{{ $ad->title }}</h5>
+                               <p class="card-text">{{ $ad->body }}</p>
+                               <button class="btn btn-primary float-left ">Category: {{ $ad->category->name }}</button>
+                               <button class="btn btn-danger float-right">Price: {{ $ad->price }} eur</button>
+
+                             </div>
+                           </div>
+                        </a>
+                    </div>
+
                     {{-- card end --}}
-                 </div>
+                 {{-- </div> --}}
                 @endforeach
 
             </div>
