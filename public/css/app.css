@@ -10013,13 +10013,17 @@ h3 {
   border-bottom: 1px solid white;
 }
 
+.nav-link {
+  font-size: 18px;
+}
+
 #counter {
   background: red;
   border-radius: 50%;
 }
 
 .contact {
-  border: 2px solid yellow;
+  border: 2px solid brown;
   margin-left: 3px;
   font-size: 20px;
   text-align: center;
@@ -10084,4 +10088,21 @@ p {
 
 .card-text:hover {
   text-decoration: underline;
+}
+
+#footer {
+  min-height: 200px;
+}
+
+.footer-content {
+  margin-top: 80px;
+}
+
+.footer-content p {
+  font-size: 20px;
+  color: #D2691E;
+}
+
+.footer-mail {
+  width: 300px;
 }

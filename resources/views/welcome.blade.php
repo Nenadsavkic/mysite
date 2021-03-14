@@ -19,6 +19,7 @@
         <div class="row">
             <div class="col-md-8 mt-5">
 
+
                 <p>Poštovanje, ja sam Nenad Savkić, ovaj sajt sam osmislio u cilju predstavljanja
                     sebe i svog znanja iz oblasti programiranja. Završio sam srednju mašinsku školu
                     , smer "Pogonski tehničar", radio sam razne poslove u životu do sada, radio sam
@@ -29,7 +30,7 @@
                 Pre oko 2 godine, iz čiste radoznalosti, napravio sam svoje prve korake iz oblasti programiranja.
                 Bilo je to prilično nespretno, da tako kažem, jer nisam znao ni odakle bih trebao početi.
                 Niko mi nije rekao da pre učenja Php-a, treba prvo savladati HTML i CSS. Kao što rekoh
-                prvi koraci bili su iz radoznalosti, da vidim da li to meni leži, da li ja to mogu da naučim,
+                prvi koraci bili su iz radoznalosti, da vidim da li to meni "leži", da li ja to mogu da naučim,
                 a onda sam video da se to meni sviđa, i da bih možda mogao spojiti lepo i korisno.
 
                 Zatim sam našao

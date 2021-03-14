@@ -18,6 +18,7 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'welcome'])->name('welcome');
+Route::get('/aboutMe', [App\Http\Controllers\HomeController::class, 'aboutMe'])->name('aboutMe');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/home-single-ad/{id}', [App\Http\Controllers\HomeController::class, 'showSingleAd'])
 ->name('home.singleAd');

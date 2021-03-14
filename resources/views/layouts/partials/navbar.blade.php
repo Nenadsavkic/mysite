@@ -16,7 +16,7 @@
                         <a href="/" class="nav-link">O meni</a>
                      </li>
                      <li class=" nav-item mr-3">
-                        <a href="#" class="nav-link">About me</a>
+                        <a href="{{ route('aboutMe') }}" class="nav-link">About me</a>
                      </li>
                      <li class=" nav-item mr-3">
                         <a href="{{ route('home') }}" class="nav-link">Home</a>

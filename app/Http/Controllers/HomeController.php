@@ -40,6 +40,10 @@ class HomeController extends Controller
     {
         return view('welcome');
     }
+    public function aboutMe()
+    {
+        return view('aboutMe');
+    }
     public function contactForm(Request $request)
     {
 
