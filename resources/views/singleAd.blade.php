@@ -19,7 +19,7 @@
         </div>
         <div class="col-md-6 offset-1">
 
-            <div class="row">
+            <div class="row single-ad">
                @if (isset($ad->image1))
                    <div class="col-6 mt-3 singleAdImg">
                        <img src="/images/add_images/{{ $ad->image1 }}" alt="{{ $ad->title }}" class="img-fluid">

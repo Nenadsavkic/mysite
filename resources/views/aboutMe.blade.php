@@ -30,8 +30,8 @@
                 first steps were out of curiosity, to see if it suits to me, can I learn that. And then I saw that I liked it, and that maybe
                 I could put it together nice and usefull.</p>
                 <p> Then I found a great online school. So while learning online, I learned the basics of web design and programming.
-                 I am currently focusing on Php, MySql and Laravel, and this site was made right in Laravel, but I also know HTML, CSS,
-                 Bootstrap, JavaScript, jQuery, WordPress, Git.</p>
+                 I am currently focusing on Php, MySql and Laravel, and this site was made right in Laravel, but I also have solid
+                 knowledge of HTML, CSS, Bootstrap, Git.</p>
 
                 <p>This site is designed to present me, and my knowledge gained so far in programming and web design, it represents
                 my resume, because I have no work experience untill now in IT.</p>

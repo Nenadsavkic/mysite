@@ -12,14 +12,14 @@
 @endsection
 
 @section('main')
-<div class="container-fluid m-2">
+<div class="container-fluid">
     <div class="row mt-5 mb-5">
-        <div class="col-md-2 sidebar">
+        <div class="col-lg-2 sidebar">
             @include('layouts.partials.sidebar')
         </div>
-        <div class="col-md-6 offset-1">
+        <div class="col-lg-6 offset-1">
             <div class="ml-5">
-                <h2 class="ml-5">Here you can see all your ads.</h2>
+                <h2 class="ml-5 pl-4">Here you can see all your ads.</h2>
             </div>
             @if (session())
                @include('layouts.partials.flashMessages')
@@ -30,7 +30,7 @@
                 @foreach ($user_ads as $ad)
                 {{-- <div class="col-md-4 offset-1 ml-5 main-content mt-3"> --}}
                     {{-- card --}}
-                    <div class="col-md-6  ">
+                    <div class="col-lg-5 offset-1">
                         <a class="text-decoration-none text-muted" href="{{ route('home.singleAd', ['id'=>$ad->id])}}">
 
                          <div class="card text-center mt-5 " style="width: 22rem;">

@@ -37,7 +37,7 @@
                 odličnu online školu, mada od reklame na ovom sajtu neće imati neku vajdu al ajde reći ću
                 da je to "Krojačeva škola". Tako sam se učeći online, upoznao sa osnovama web dizajna i programiranja.
                 Trenutno sam se fokusirao na Php, MySql i Laravel, i ovaj sajt je pravljen upravo u Laravel-u, ali takodje
-                poznajem HTML, CSS, Bootstrap, JavaScript, jQuery, WordPress, Git.
+                poznajem solidno HTML, CSS, Bootstrap, Git.
                 </p>
                 <p>Ovaj sajt je zamisljen tako da predstavi mene, i moje do sada steceno znanje iz programiranja i web dizajna,
                     odnosno on pretstavlja moju radnu biografiju, jer ja nemam radnog iskustva u IT-u.</p>
