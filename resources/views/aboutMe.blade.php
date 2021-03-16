@@ -19,7 +19,7 @@
         <div class="row">
             <div class="col-md-8 mt-5">
 
-                <p> Hello, I am Nenad Savkić, I designed this site in order to present myself and my knowledge in the field of programming.
+                <p> Hello, I am Nenad Savkic, I designed this site in order to present myself and my knowledge in the field of programming.
                 I graduated from mechanical high school, majoring in "Mechanical Technician". I have done various jobs in my life so far,
                 I worked as an operator on a CNC machine in the Shipyard, and warehouse jobs, then in security, and I am currently employed in
                 a manufacturing company of wooden furniture. </p>
@@ -30,7 +30,7 @@
                 first steps were out of curiosity, to see if it suits to me, can I learn that. And then I saw that I liked it, and that maybe
                 I could put it together nice and usefull.</p>
                 <p> Then I found a great online school. So while learning online, I learned the basics of web design and programming.
-                 I am currently focusing on Php, MySql and Laravel, and this site was made right in Laravel, but I also have solid
+                 I am currently focusing on Php, MySql and Laravel, and this site was made in Laravel, but I also have solid
                  knowledge of HTML, CSS, Bootstrap, Git.</p>
 
                 <p>This site is designed to present me, and my knowledge gained so far in programming and web design, it represents
@@ -48,7 +48,7 @@
                 <p>Sincerely,</p>
 
 
-                <p>Nenad Savkić</p>
+                <p>Nenad Savkic</p>
 
 
 

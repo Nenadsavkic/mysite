@@ -22,8 +22,8 @@
 
             <div class="row">
 
-                <div class="col-md-8 offset-3">
-                   <h2 class="ml-5">Edit ad form</h2><br><br>
+                <div class="col-md-8 offset-3 mt-3">
+                   <h2 class="ml-5 pl-5">Edit ad form</h2><br><br>
                  <form action="{{ route('home.saveEditedAd', ['id' => $ad->id]) }}" method="POST" enctype="multipart/form-data">
                     @csrf
                    <label for="title"><b>Ad Tile:</b></label>

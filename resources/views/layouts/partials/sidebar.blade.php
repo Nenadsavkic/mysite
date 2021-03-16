@@ -20,7 +20,7 @@
 <a href="{{ route('home') }}" class="btn btn-secondary form-control mt-2">Your ads</a>
 
 <a href="{{ route('home.showMessages') }}" class="btn btn-secondary form-control mt-2 pt-1">
-    Messages <span id="counter" class="btn btn-sm text-white">3</span>
+    Messages <span id="counter" class="btn btn-sm btn-danger rounded-circle text-white">3</span>
     {{-- @if (Auth::user()->messages->count() > 0)
       <span class="btn btn-danger btn-sm rounded-circle ml-2" >{{ Auth::user()->messages->count() }}</span>
     @endif --}}
