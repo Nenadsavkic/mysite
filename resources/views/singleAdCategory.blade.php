@@ -1,5 +1,5 @@
 
-@extends('layouts.master')
+@extends('layouts.app')
 
 @section('title')
     {{ $ad->title }}
@@ -11,7 +11,7 @@
     </div>
 @endsection
 
-@section('main')
+@section('content')
 
 
 
@@ -68,31 +68,31 @@
 
                 @if (isset($ad->image1))
                 <div class="col-md-4 mt-5">
-                    <img class="category-img img-fluid"  src="/images/add_images/{{ $ad->image1 }}" alt="" class="img-fluid">
+                    <img class="category-img img-fluid"  src="/images/add_images/{{ $ad->image1 }}" alt="">
                 </div>
                 @endif
                 @if (isset($ad->image2))
                 <div class="col-md-4 mt-5">
-                    <img class="category-img img-fluid" src="/images/add_images/{{ $ad->image2 }}" alt="" class="img-fluid">
+                    <img class="category-img img-fluid" src="/images/add_images/{{ $ad->image2 }}" alt="">
                 </div>
                 @endif
                 @if (isset($ad->image3))
                 <div class="col-md-4 mt-5">
-                    <img class="category-img img-fluid" src="/images/add_images/{{ $ad->image3 }}" alt="" class="img-fluid">
+                    <img class="category-img img-fluid" src="/images/add_images/{{ $ad->image3 }}" alt="">
                 </div>
                 @endif
                 @if (isset($ad->image4))
                 <div class="col-md-4 mt-5">
-                    <img class="category-img img-fluid" src="/images/add_images/{{ $ad->image4 }}" alt="" class="img-fluid">
+                    <img class="category-img img-fluid" src="/images/add_images/{{ $ad->image4 }}" alt="">
                 </div>
                 @endif
                 @if (isset($ad->image5))
                 <div class="col-md-4 mt-5">
-                    <img class="category-img img-fluid" src="/images/add_images/{{ $ad->image5 }}" alt="" class="img-fluid">
+                    <img class="category-img img-fluid" src="/images/add_images/{{ $ad->image5 }}" alt="">
                 </div>
                 @endif
 
-                <div class="col-md-12">
+                <div class="col-md-12 ad-data mt-5">
                     <article class="text-center mt-5">
                         <h2>{{ $ad->title }} <span class="btn btn-success float-right"> Category: {{ $ad->category->name }}</span>
                         <span class="btn btn-primary float-left"> Owner: {{ $ad->user->name }}</span></h2>

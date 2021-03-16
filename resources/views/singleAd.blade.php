@@ -1,5 +1,5 @@
 
-@extends('layouts.master')
+@extends('layouts.app')
 
 @section('title')
     {{ $user->name }} single ad
@@ -11,7 +11,7 @@
     </div>
 @endsection
 
-@section('main')
+@section('content')
 <div class="container-fluid mt-5">
     <div class="row mb-5">
         <div class="col-md-2 sidebar">
@@ -21,33 +21,33 @@
 
             <div class="row single-ad">
                @if (isset($ad->image1))
-                   <div class="col-6 mt-3 singleAdImg">
-                       <img src="/images/add_images/{{ $ad->image1 }}" alt="{{ $ad->title }}" class="img-fluid">
+                   <div class="col-10 offset-1 mt-3 singleAdImg" >
+                       <img id="mainImg" src="/images/add_images/{{ $ad->image1 }}" class="img-fluid" style="width: 100%">
                    </div>
                @endif
                @if (isset($ad->image2))
-                    <div class="col-6 mt-3 singleAdImg">
-                        <img src="/images/add_images/{{ $ad->image2 }}" alt="{{ $ad->title }}" class="img-fluid">
+                    <div class="col-5  offset-1 mt-3 singleAdImg">
+                        <img src="/images/add_images/{{ $ad->image2 }}" class="img-fluid thumb" style="width: 100%">
                     </div>
                @endif
                @if (isset($ad->image3))
-                    <div class="col-6 mt-3 singleAdImg">
-                        <img src="/images/add_images/{{ $ad->image3 }}" alt="{{ $ad->title }}" class="img-fluid">
+                    <div class="col-5 mt-3 singleAdImg">
+                        <img src="/images/add_images/{{ $ad->image3 }}" class="img-fluid thumb" style="width: 100%">
                     </div>
                @endif
                @if (isset($ad->image4))
-                    <div class="col-6 mt-3 singleAdImg">
-                        <img src="/images/add_images/{{ $ad->image4 }}" alt="{{ $ad->title }}" class="img-fluid">
+                    <div class="col-5 offset-1 mt-3 singleAdImg">
+                        <img src="/images/add_images/{{ $ad->image4 }}" class="img-fluid thumb" style="width: 100%">
                     </div>
                @endif
                @if (isset($ad->image5))
-                    <div class="col-6 mt-3 singleAdImg">
-                        <img src="/images/add_images/{{ $ad->image5 }}" alt="{{ $ad->title }}" class="img-fluid">
+                    <div class="col-5 mt-3 singleAdImg">
+                        <img src="/images/add_images/{{ $ad->image5 }}" class="img-fluid thumb" style="width: 100%">
                     </div>
                @endif
                <div class="container">
                    <div class="row">
-                       <div class="col-md-12 text-center mt-5">
+                       <div class="col-md-12 text-center mt-5 ad-data">
 
                             <h2>{{ $ad->title }} <span class="btn btn-success float-left">{{ $ad->category->name }}</span>
                                 <a href="{{ route('home.adEditForm', ['id'=>$ad->id]) }}" class="btn btn-secondary float-right">Edit ad</a> </h2>
@@ -68,13 +68,30 @@
             </div>
 
 
-
-
-
-
-
         </div>
 
     </div>
 </div>
+@endsection
+
+@section('page-scripts')
+
+   <script>
+
+       let thumbs = document.querySelectorAll('.thumb');
+       for (let i = 0; i < thumbs.length; i++){
+           const thumb = thumbs[i];
+           thumb.addEventListener('click', function () {
+
+                let mainImg = document.querySelector('#mainImg');
+                let mainImgSrc = mainImg.getAttribute('src');
+                let src = this.getAttribute('src');
+                mainImg.setAttribute('src', src);
+                this.setAttribute('src', mainImgSrc);
+
+        })
+       }
+
+   </script>
+
 @endsection

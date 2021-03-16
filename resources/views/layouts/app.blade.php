@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title> {{ config('app.name', 'Mysite') }}</title>
+    <title> @yield('title')</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -26,5 +26,8 @@
             @yield('content')
         </main>
     </div>
+    @yield('page-scripts')
+
+    @include('layouts.partials.footer')
 </body>
 </html>

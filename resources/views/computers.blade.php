@@ -1,4 +1,4 @@
-@extends('layouts.master')
+@extends('layouts.app')
 
 @section('title')
     Computers
@@ -10,7 +10,7 @@
     </div>
 @endsection
 
-@section('main')
+@section('content')
 
 @include('layouts.partials.carouselComputers')
 

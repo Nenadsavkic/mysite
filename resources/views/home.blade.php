@@ -1,5 +1,5 @@
 
-@extends('layouts.master')
+@extends('layouts.app')
 
 @section('title')
     {{ $user->name }} homepage
@@ -11,7 +11,7 @@
     </div>
 @endsection
 
-@section('main')
+@section('content')
 <div class="container-fluid">
     <div class="row mt-5 mb-5">
         <div class="col-lg-2 sidebar">
@@ -28,7 +28,7 @@
 
             <div class="row mt-5">
                 @foreach ($user_ads as $ad)
-                {{-- <div class="col-md-4 offset-1 ml-5 main-content mt-3"> --}}
+
                     {{-- card --}}
                     <div class="col-lg-5 offset-1">
                         <a class="text-decoration-none text-muted" href="{{ route('home.singleAd', ['id'=>$ad->id])}}">
@@ -47,7 +47,7 @@
                     </div>
 
                     {{-- card end --}}
-                 {{-- </div> --}}
+
                 @endforeach
 
             </div>

@@ -1,5 +1,5 @@
 
-@extends('layouts.master')
+@extends('layouts.app')
 
 @section('title')
     {{ $user->name }} homepage
@@ -11,7 +11,7 @@
     </div>
 @endsection
 
-@section('main')
+@section('content')
 <div class="container-fluid">
     <div class="row mt-5 mb-5">
         <div class="col-md-2 sidebar">
