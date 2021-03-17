@@ -22,27 +22,27 @@
             <div class="row single-ad">
                @if (isset($ad->image1))
                    <div class="col-10 offset-1 mt-3 singleAdImg" >
-                       <img id="mainImg" src="/images/add_images/{{ $ad->image1 }}" class="img-fluid" style="width: 100%">
+                       <img id="mainImg" src="/images/add_images/{{ $ad->image1 }}" class="img-fluid large-img">
                    </div>
                @endif
                @if (isset($ad->image2))
                     <div class="col-5  offset-1 mt-3 singleAdImg">
-                        <img src="/images/add_images/{{ $ad->image2 }}" class="img-fluid thumb" style="width: 100%">
+                        <img src="/images/add_images/{{ $ad->image2 }}" class="img-fluid thumb small-img" style="width: 100%">
                     </div>
                @endif
                @if (isset($ad->image3))
                     <div class="col-5 mt-3 singleAdImg">
-                        <img src="/images/add_images/{{ $ad->image3 }}" class="img-fluid thumb" style="width: 100%">
+                        <img src="/images/add_images/{{ $ad->image3 }}" class="img-fluid thumb small-img" style="width: 100%">
                     </div>
                @endif
                @if (isset($ad->image4))
                     <div class="col-5 offset-1 mt-3 singleAdImg">
-                        <img src="/images/add_images/{{ $ad->image4 }}" class="img-fluid thumb" style="width: 100%">
+                        <img src="/images/add_images/{{ $ad->image4 }}" class="img-fluid thumb small-img" style="width: 100%">
                     </div>
                @endif
                @if (isset($ad->image5))
                     <div class="col-5 mt-3 singleAdImg">
-                        <img src="/images/add_images/{{ $ad->image5 }}" class="img-fluid thumb" style="width: 100%">
+                        <img src="/images/add_images/{{ $ad->image5 }}" class="img-fluid thumb small-img" style="width: 100%">
                     </div>
                @endif
                <div class="container">
@@ -57,7 +57,7 @@
                             <form action="{{ route('home.adDelete', ['id'=>$ad->id]) }}" method="post">
                                 @csrf
                                 @method('delete')
-                                <button type="submit" class="btn btn-small btn-danger float-right mt-5">
+                                <button onclick="return confirm('Are you sure you want to delete this ad?');" type='submit' class="btn btn-small btn-danger float-right mt-5">
                                 Delete ad</button>
                             </form>
 

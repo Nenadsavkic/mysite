@@ -21,12 +21,13 @@
             <div class="ml-5">
                 <h2 class="ml-5 pl-4">Here you can see all your ads.</h2>
             </div>
+
             @if (session())
                @include('layouts.partials.flashMessages')
-
             @endif
 
             <div class="row mt-5">
+
                 @foreach ($user_ads as $ad)
 
                     {{-- card --}}

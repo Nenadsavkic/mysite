@@ -10125,13 +10125,13 @@ p {
 }
 
 .forms {
-  color: brown;
+  color: black;
   border: 2px solid brown;
   box-shadow: none !important;
 }
 
 .forms:focus {
-  color: brown;
+  color: black;
   border: 2px solid brown;
   box-shadow: darkred;
 }
@@ -10186,7 +10186,7 @@ p {
 
 .small-img {
   width: 100%;
-  height: 350px;
+  height: 200px !important;
 }
 
 #footer {

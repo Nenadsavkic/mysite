@@ -133,7 +133,7 @@ class HomeController extends Controller
               'category_id' => $request->category
          ]);
 
-            return redirect(route('home'));
+            return redirect(route('home'))->with('message', 'Your ad is successfully created!');
 
     }
 
@@ -224,7 +224,7 @@ class HomeController extends Controller
            'category_id' => $request->category
       ]);
 
-         return redirect(route('home'));
+         return redirect(route('home'))->with('message', 'Your ad is successfully updated!');
 
    }
 

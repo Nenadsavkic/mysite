@@ -57,6 +57,7 @@ p {
 }
 .single-ad{
     margin-top: 120px;
+
 }
 .card-img-top{
     height: 300px;
@@ -118,12 +119,12 @@ p {
     text-decoration: underline;
 }
 .forms{
-    color: brown;
+    color: black;
     border: 2px solid brown;
     box-shadow: none !important;
 }
 .forms:focus{
-    color: brown;
+    color: black;
     border: 2px solid brown;
     box-shadow: darkred;
 }
@@ -168,10 +169,11 @@ p {
 .large-img{
 
     width: 100%;
+
 }
 .small-img{
     width: 100%;
-    height: 350px;
+    height: 200px !important;
 }
 #footer{
     margin-top: 100px;

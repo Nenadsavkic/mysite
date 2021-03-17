@@ -106,6 +106,19 @@
                     </article>
 
                 </div>
+                @if (auth()->user() && auth()->user()->id !== $ad->user_id)
+                    <div class="col-md-6 offset-3 mt-5">
+                        <h2 class="ml-5 pl-5">Send message to {{ $ad->user->name }}</h2>
+                        <form action="" method="POST">
+                        <label for="title"><b>Title:</b></label>
+                        <input type="text" name="title" class="form-control forms" placeholder="Title">
+                        <label for="body" class="mt-1"><b>Message:</b></label>
+                        <textarea name="body" cols="30" rows="10" class="form-control forms" placeholder="Write your message"></textarea><br>
+                        <button type="submit" class="form-control form-button text-light">Send message</button>
+
+                    </form>
+                </div>
+                @endif
 
 
 
