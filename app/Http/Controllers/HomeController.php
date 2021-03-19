@@ -234,7 +234,7 @@ class HomeController extends Controller
              $user = Auth::user();
 
              $request->validate([
-                 'title' => 'required',
+
                  'body' => 'required',
 
              ]);
