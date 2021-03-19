@@ -5,23 +5,26 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Ad extends Model
+class Message extends Model
 {
     use HasFactory;
 
     protected $guarded = [];
 
-    public function category()
+    public function ad()
     {
-         return $this->belongsTo('\App\Models\Category');
+       return $this->belongsTo('App\Models\Ad');
     }
 
     public function user()
     {
         return $this->belongsTo('\App\Models\User');
     }
-    public function message()
+
+    public function sender()
     {
-        return $this->hasMany('\App\Models\Message');
+        return $this->belongsTo('\App\Models\User','sender_id');
     }
+
+
 }

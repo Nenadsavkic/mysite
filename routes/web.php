@@ -45,6 +45,12 @@ Route::get('/home-delete-user', [App\Http\Controllers\HomeController::class, 'de
 Route::get('/ad-single-ad/{id}', [App\Http\Controllers\AdController::class, 'index'])
 ->name('ad.singleAd');
 
+Route::get('/home-messages', [App\Http\Controllers\HomeController::class, 'showMessages'])
+->name('home.showUserMessages');
+
+Route::get('/home-replay', [App\Http\Controllers\HomeController::class, 'replayMsg'])
+->name('home.replayMsg');
+
 
 
 
@@ -59,4 +65,13 @@ Route::delete('/home-ad-delete/{id}', [App\Http\Controllers\HomeController::clas
 
 Route::post('/home-save-editedAd/{id}', [App\Http\Controllers\HomeController::class, 'saveEditedAd'])
 ->name('home.saveEditedAd');
+
+Route::post('/home-user-message/{id}', [App\Http\Controllers\HomeController::class, 'userMessage'])
+->name('home.userMessage');
+
+Route::post('/home-replay-store', [App\Http\Controllers\HomeController::class, 'replayMsgStore'])
+->name('home.replayMsgStore');
+
+Route::delete('/home-message-delete/{id}', [App\Http\Controllers\HomeController::class, 'deleteMsg'])
+->name('home.deleteMsg');
 

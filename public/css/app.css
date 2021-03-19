@@ -10189,6 +10189,14 @@ p {
   height: 200px !important;
 }
 
+.message-body {
+  background-color: #fff;
+}
+
+.message-body p {
+  color: black;
+}
+
 #footer {
   margin-top: 100px;
   min-height: 200px;

@@ -17,6 +17,10 @@
 
     <div class="container">
 
+        @if (session())
+        @include('layouts.partials.flashMessages')
+     @endif
+
         <div class="row mt-5 mb-5">
 
             <div id="carouselSingleAd" class="col-md-12 carousel slide ml-1" data-ride="carousel">
@@ -109,7 +113,8 @@
                 @if (auth()->user() && auth()->user()->id !== $ad->user_id)
                     <div class="col-md-6 offset-3 mt-5">
                         <h2 class="ml-5 pl-5">Send message to {{ $ad->user->name }}</h2>
-                        <form action="" method="POST">
+                        <form action="{{ route('home.userMessage', ['id'=>$ad->id]) }}" method="POST">
+                        @csrf
                         <label for="title"><b>Title:</b></label>
                         <input type="text" name="title" class="form-control forms" placeholder="Title">
                         <label for="body" class="mt-1"><b>Message:</b></label>

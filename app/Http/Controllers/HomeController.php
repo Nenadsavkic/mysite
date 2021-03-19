@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Ad;
 use App\Models\Category;
+use App\Models\Message;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -141,7 +142,7 @@ class HomeController extends Controller
     {
       $user = Auth::user();
       $ad = Ad::find($id);
-      //dd($ad);
+
       return view('singleAd', compact('user','ad'));
     }
 
@@ -227,6 +228,86 @@ class HomeController extends Controller
          return redirect(route('home'))->with('message', 'Your ad is successfully updated!');
 
    }
+
+   public function userMessage(Request $request, $id)
+   {
+             $user = Auth::user();
+
+             $request->validate([
+                 'title' => 'required',
+                 'body' => 'required',
+
+             ]);
+
+             // New Message
+
+            $messages = new Message();
+
+            $messages->title = $request->title;
+            $messages->body = $request->body;
+            $messages->sender_id = auth()->user()->id;
+            $messages->receiver_id = Ad::find($id)->user_id;
+            $messages->ad_id = Ad::find($id)->id;
+            $messages->save();
+
+
+
+            return redirect()->back()->with('message', 'Your message is sent to owner of this ad. ');
+
+    }
+
+    public function showMessages()
+    {
+
+        $user = Auth::user();
+        $messages = Message::all()->where('receiver_id', Auth::user()->id);
+        //dd($messages->count());
+        return view('showUserMessages', compact('messages','user'));
+    }
+
+    public function replayMsg()
+    {
+        $user = Auth::user();
+        $sender_id = request()->sender_id;
+        $ad_id = request()->ad_id;
+
+        $messages = Message::where('sender_id',$sender_id)->where('ad_id',$ad_id)->get();
+
+        return view('replayMsg', compact('sender_id','ad_id','messages','user'));
+    }
+
+    public function replayMsgStore(Request $request)
+    {
+        $sender = User::find($request->sender_id);
+        $ad = Ad::find($request->ad_id);
+
+        // New message
+
+        $message = new Message();
+        $message->title = $request->title;
+        $message->body = $request->body;
+        $message->sender_id = Auth::user()->id;
+        $message->receiver_id = $sender->id;
+        $message->ad_id = $ad->id;
+        $message->save();
+
+        return redirect()->route('home.showUserMessages')->with('message', 'Replay sent.');
+
+
+    }
+
+    public function deleteMsg($id)
+    {
+        $message = Message::find($id);
+        $message->delete();
+
+        return redirect()->back()->with('message', 'Message is deleted.');
+
+    }
+
+
+
+
 
    public function deleteUser()
    {
