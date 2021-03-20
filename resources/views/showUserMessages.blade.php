@@ -39,14 +39,15 @@
 
                                 <div class="card" style="width: 40rem;">
                                     <div class="card-header">
-                                    Title: {{ $message->title }}
+                                    <p class="float-left">Title: {{ $message->title }}</p>
+                                    <p class="float-right">Ad name: {{ $message->ad_name }}</p>
                                     </div>
                                     <div class="card-body message-body">
                                     <p class="float-left">Sender: {{ $message->sender->name }}</p>
                                     <p class="float-right">Created at: {{ $message->created_at->format('d M Y') }}</p><br><br>
                                     <p class="card-text message-text">{{ $message->body }}</p><br>
                                     <a class="btn btn-primary float-left" href="{{ route('home.replayMsg', ['sender_id' => $message->sender_id,
-                                        'ad_id' => $message->ad_id]) }}">Reply</a>
+                                        'ad_id' => $message->ad_id, 'ad_name' => $message->ad_name]) }}">Reply</a>
                                     <form action="{{ route('home.deleteMsg', ['id'=>$message->id]) }}" method="post">
                                      @csrf
                                      @method('delete')

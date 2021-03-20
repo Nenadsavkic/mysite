@@ -75,3 +75,6 @@ Route::post('/home-replay-store', [App\Http\Controllers\HomeController::class, '
 Route::delete('/home-message-delete/{id}', [App\Http\Controllers\HomeController::class, 'deleteMsg'])
 ->name('home.deleteMsg');
 
+Route::post('/home-contact', [App\Http\Controllers\HomeController::class, 'emailContact'])
+->name('home.contact');
+

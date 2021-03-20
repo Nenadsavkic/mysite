@@ -10004,6 +10004,11 @@ h3 {
     border-color: #dee2e6;
   }
 }
+* {
+  margin: 0;
+  padding: 0;
+}
+
 #logo {
   width: 50px;
   height: 50px;
@@ -10039,6 +10044,7 @@ p {
 
 .carousel {
   margin-bottom: -15px;
+  margin-top: -25px;
 }
 
 .carousel img {
@@ -10106,10 +10112,6 @@ p {
 
 .singleAdImg img {
   max-height: 200px;
-}
-
-.card-img-top {
-  max-height: 350px !important;
 }
 
 .category-img {

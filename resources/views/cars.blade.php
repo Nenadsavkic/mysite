@@ -29,7 +29,7 @@
                     <option value="lower">Price ascending</option>
                     <option value="higher">Price descending</option>
                 </select>
-                <button type="submit" class="btn btn-secondary mt-1">Apply</button>
+                <button type="submit" class="btn btn-secondary mt-1 mb-5">Apply</button>
             </form>
         </div>
       @foreach ($cars as $car)

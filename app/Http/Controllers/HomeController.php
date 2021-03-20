@@ -6,9 +6,10 @@ use App\Models\Ad;
 use App\Models\Category;
 use App\Models\Message;
 use App\Models\User;
+use Illuminate\Contracts\Session\Session;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-
+use Illuminate\Support\Facades\Mail;
 
 class HomeController extends Controller
 {
@@ -48,9 +49,35 @@ class HomeController extends Controller
     public function contactForm(Request $request)
     {
 
+
         return view('contactForm');
 
     }
+
+    public function emailContact(Request $request) {
+        $data = [];
+        $this->validate($request, [
+            'name' => 'required',
+            'email' => 'required|email',
+            'body' => 'required'
+        ]);
+
+            $data =[
+                'name' => $request->name,
+                'email' => $request->email,
+                'body' => $request->body
+            ];
+
+        Mail::send('contactForm', $data, function($message) use($data){
+            //$message->from($data['name']);
+            $message->from($data['email']);
+            $message->to('savkicn@gmail.com');
+        });
+
+        return redirect()->back()->with('message', 'Your email is sent.');
+    }
+
+
     public function saveImg(Request $request)
     {
         $request->validate([
@@ -232,6 +259,7 @@ class HomeController extends Controller
    public function userMessage(Request $request, $id)
    {
              $user = Auth::user();
+             $ad_name = Ad::find($id)->title;
 
              $request->validate([
 
@@ -244,6 +272,7 @@ class HomeController extends Controller
             $messages = new Message();
 
             $messages->title = $request->title;
+            $messages->ad_name = $ad_name;
             $messages->body = $request->body;
             $messages->sender_id = auth()->user()->id;
             $messages->receiver_id = Ad::find($id)->user_id;
@@ -261,7 +290,7 @@ class HomeController extends Controller
 
         $user = Auth::user();
         $messages = Message::all()->where('receiver_id', Auth::user()->id);
-        //dd($messages->count());
+
         return view('showUserMessages', compact('messages','user'));
     }
 
@@ -270,21 +299,25 @@ class HomeController extends Controller
         $user = Auth::user();
         $sender_id = request()->sender_id;
         $ad_id = request()->ad_id;
+        $ad_name = request()->ad_name;
 
-        $messages = Message::where('sender_id',$sender_id)->where('ad_id',$ad_id)->get();
 
-        return view('replayMsg', compact('sender_id','ad_id','messages','user'));
+        $messages = Message::where('sender_id',$sender_id)->where('ad_id',$ad_id)->where('ad_name', $ad_name)->get();
+
+        return view('replayMsg', compact('sender_id','ad_id','messages','user','ad_name'));
     }
 
     public function replayMsgStore(Request $request)
     {
         $sender = User::find($request->sender_id);
         $ad = Ad::find($request->ad_id);
+       // $ad_name = Ad::find($request->ad_name);
 
         // New message
 
         $message = new Message();
         $message->title = $request->title;
+        $message->ad_name = $ad->title;
         $message->body = $request->body;
         $message->sender_id = Auth::user()->id;
         $message->receiver_id = $sender->id;

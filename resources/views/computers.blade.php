@@ -19,7 +19,7 @@
 </div>
 
 
-<div class="container-fluid mb-5 mt-5">
+<div class="container-fluid mb-5 mt-3">
 
     <div class="row">
         <div class="col-md-6 offset-3">
@@ -30,7 +30,7 @@
                     <option value="lower">Price ascending</option>
                     <option value="higher">Price descending</option>
                 </select>
-                <button type="submit" class="btn btn-secondary mt-1">Apply</button>
+                <button type="submit" class="btn btn-secondary mt-1 mb-5">Apply</button>
             </form>
         </div>
       @foreach ($computers as $computer)

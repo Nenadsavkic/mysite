@@ -39,7 +39,8 @@
 
                                 <div class="card" style="width: 40rem;">
                                     <div class="card-header">
-                                         Title: {{ $message->title }}
+                                         <p class="float-left">Title: {{ $message->title }}</p>
+                                         <p class="float-right">Ad name: {{ $message->ad_name }}</p>
                                     </div>
                                     <div class="card-body message-body">
                                         <p class="float-left">Sender: {{ $message->sender->name }}</p>
