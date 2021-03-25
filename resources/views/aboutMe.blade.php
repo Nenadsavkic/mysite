@@ -63,7 +63,6 @@
     <div class=" container row mt-5 contact">
         <div class="col-6 offset-3 mt-3 ">
             <p>You can contact me by email: <span>savkicn@gmail.com</span></p>
-                   <p>or by phone: <span> 063 643 813</span></p>
        </div>
     </div>
 

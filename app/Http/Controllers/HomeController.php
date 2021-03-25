@@ -54,29 +54,6 @@ class HomeController extends Controller
 
     }
 
-    public function emailContact(Request $request) {
-        $data = [];
-        $this->validate($request, [
-            'name' => 'required',
-            'email' => 'required|email',
-            'body' => 'required'
-        ]);
-
-            $data =[
-                'name' => $request->name,
-                'email' => $request->email,
-                'body' => $request->body
-            ];
-
-        Mail::send('contactForm', $data, function($message) use($data){
-            //$message->from($data['name']);
-            $message->from($data['email']);
-            $message->to('savkicn@gmail.com');
-        });
-
-        return redirect()->back()->with('message', 'Your email is sent.');
-    }
-
 
     public function saveImg(Request $request)
     {
