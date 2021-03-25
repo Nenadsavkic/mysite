@@ -3,7 +3,7 @@
 @if (Auth::user()->user_image)
    src="{{ asset('/storage/images/'.Auth::user()->user_image) }}"
 @else
-   src="/storage/images/noimage.jpg"
+   src="/images/user_image/noimage.jpg"
 @endif
 
   alt="user_image" class=" img-thumbnail" title="Add new image"><br><br>

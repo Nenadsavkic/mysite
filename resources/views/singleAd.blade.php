@@ -22,7 +22,7 @@
             <div class="row single-ad">
                @if (isset($ad->image1))
                    <div class="col-10 offset-1 mt-3 singleAdImg">
-                       <img id="mainImg" src="/images/add_images/{{ $ad->image1 }}" class="img-fluid large-img">
+                       <img id="mainImg" src="/images/add_images/{{ $ad->image1 }}" class="img-fluid large-img" style="height: 500px">
                    </div>
                @endif
                @if (isset($ad->image2))
