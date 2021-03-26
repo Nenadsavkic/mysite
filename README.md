@@ -21,7 +21,7 @@
    composer install
    ```
 
-### Copy the '.env.example' file and make the required configuration changes in the '.env' file
+### Copy the '.env.example' file in the '.env' file
     
    ```bash
    cp .env.example .env
