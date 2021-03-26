@@ -9,7 +9,7 @@
 
 ### Clone the repository
 
-   <p> git clone git@github.com:gothinkster/laravel-realworld-example-app.git </p>
+   <p> git clone https://github.com/Nenadsavkic/mysite.git </p>
 
    ### Switch to the repository cloned folder
 
