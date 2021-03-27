@@ -7,7 +7,7 @@
 ### I assume you already have Laravel installed <p>[Official Documentation](https://laravel.com/docs/8.x/installation#installation)</p>
 
 
-### Clone the repository
+### Clone the repository 
 
    <p> git clone https://github.com/Nenadsavkic/mysite.git </p>
 
