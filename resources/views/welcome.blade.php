@@ -33,9 +33,7 @@
                 prvi koraci bili su iz radoznalosti, da vidim da li to meni "leži", da li ja to mogu da naučim,
                 a onda sam video da se to meni sviđa, i da bih možda mogao spojiti lepo i korisno.
 
-                Zatim sam našao
-                odličnu online školu, mada od reklame na ovom sajtu neće imati neku vajdu al ajde reći ću
-                da je to "Krojačeva škola". Tako sam se učeći online, upoznao sa osnovama web dizajna i programiranja.
+                Pohadjajuci razne kurseve online, na srpskom i na engleskom jeziku, upoznao sa osnovama web dizajna i programiranja.
                 Trenutno sam se fokusirao na Php, MySql i Laravel, i ovaj sajt je pravljen upravo u Laravel-u, ali takodje
                 poznajem solidno HTML, CSS, Bootstrap, Git.
                 </p>
