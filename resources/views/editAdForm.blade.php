@@ -17,7 +17,7 @@
         <div class="col-md-3 col-lg-2 sidebar">
             @include('layouts.partials.sidebar')
         </div>
-        <div class="col-md-8">
+        <div class="col-md-7">
 
 
             <div class="row">
