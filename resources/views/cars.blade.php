@@ -18,10 +18,10 @@
     <h2>Welcome to Cars Ads</h2>
 </div>
 
-<div class="container-fluid mb-5 mt-5">
+<div class="container mb-5 mt-5">
 
     <div class="row">
-        <div class="col-md-6 offset-3">
+        <div class="col-sm-12 col-md-6 offset-3">
             <form action="{{ route('cars') }}">
                 <label for="type">Sort Cars by price:</label>
                 <select name="type" class="form-control">
@@ -33,8 +33,8 @@
             </form>
         </div>
       @foreach ($cars as $car)
+       <div class="col-sm-12 col-md-6 col-lg-4 mb-5">
         <a class="text-decoration-none text-muted ml-3" href="{{ route('ad.singleAd', ['id'=>$car->id])}}">
-           <div class="col-md-4 ml-5 mb-5">
             <div class="card text-center mt-5 " style="width: 25rem;">
                 <img src="/images/add_images/{{ $car->image1 }}" class="card-img-top mainAddImg" alt="...">
                 <div class="card-body">
@@ -44,9 +44,9 @@
                   <button class="btn btn-danger float-right">Price: {{ $car->price }} eur</button>
 
                 </div>
-              </div>
-           </div>
-        </a>
+              </div>          
+         </a>
+        </div>
       @endforeach
     </div>
 
