@@ -14,7 +14,7 @@
 @section('content')
 <div class="container-fluid m-2">
     <div class="row mt-5 mb-5">
-        <div class="col-md-2 sidebar">
+        <div class="col-md-3 col-lg-2 sidebar">
             @include('layouts.partials.sidebar')
         </div>
         <div class="col-md-8">
