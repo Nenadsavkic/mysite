@@ -2,14 +2,14 @@
     <div class="container">
           <div class="row">
               <div class=" col-md-6 footer-content float-left">
-                  <div class="footer-mail">
-                    <img src="/logo/letter.png" width="70px" class="img-fluid ml-5">
+                  <div class="footer-mail ml-3">
+                    <img src="/logo/letter.png" width="70px" class="img-fluid rounded ml-5">
                     <p class="float-right">savkicn@gmail.com</p>
                   </div>
 
               </div>
               <div class=" col-md-6 footer-content float-right">
-                <p class="float-right"><small>&#169;</small>Nenad Savkic 2021.</p>
+                <p class="float-right mr-5"><small>&#169;</small>Nenad Savkic 2021.</p>
              </div>
           </div>
     </div>
