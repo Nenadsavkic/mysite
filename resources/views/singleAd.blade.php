@@ -14,10 +14,10 @@
 @section('content')
 <div class="container-fluid mt-5">
     <div class="row mb-5">
-        <div class="col-md-3 col-lg-2 sidebar">
+        <div class="col-sm-8 col-md-3 col-lg-2 sidebar">
             @include('layouts.partials.sidebar')
         </div>
-        <div class="col-md-6 offset-1">
+        <div class="col-sm-12 col-md-6 col-lg-7 offset-md-1">
 
             <div class="row single-ad">
                @if (isset($ad->image1))
