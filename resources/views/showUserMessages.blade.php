@@ -34,7 +34,7 @@
 
 
 
-                        <div class="col-md-10 offset-1 mr-5 mt-5">
+                        <div class="col-sm-12 col-lg-10 offset-lg-1 mr-5 mt-5">
                                 {{-- card --}}
 
                                 <div class="card">
