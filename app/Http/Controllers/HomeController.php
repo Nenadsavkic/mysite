@@ -289,6 +289,11 @@ class HomeController extends Controller
         $sender = User::find($request->sender_id);
         $ad = Ad::find($request->ad_id);
        // $ad_name = Ad::find($request->ad_name);
+         $request->validate([
+
+        'body' => 'required',
+
+        ]);
 
         // New message
 
