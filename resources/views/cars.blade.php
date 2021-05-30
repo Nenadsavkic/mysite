@@ -21,7 +21,7 @@
 <div class="container mb-5 mt-5">
 
     <div class="row">
-        <div class="col-sm-12 col-md-6 offset-3">
+        <div class="col-md-6 offset-md-3">
             <form action="{{ route('cars') }}">
                 <label for="type">Sort Cars by price:</label>
                 <select name="type" class="form-control">
