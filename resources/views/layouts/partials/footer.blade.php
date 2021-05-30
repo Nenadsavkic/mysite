@@ -9,7 +9,7 @@
 
               </div>
               <div class=" col-md-6 footer-content ">
-                <p class="text-center"><small>&#169;</small>Nenad Savkic 2021.</p>
+                <p class="text-center mt-1"><small>&#169;</small>Nenad Savkic 2021.</p>
              </div>
           </div>
     </div>
