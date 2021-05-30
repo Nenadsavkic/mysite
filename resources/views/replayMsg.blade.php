@@ -14,10 +14,10 @@
 @section('content')
 <div class="container-fluid">
     <div class="row mt-5 mb-5">
-        <div class="col-sm-8 col-md-3 col-lg-2 sidebar mr-5">
+        <div class="col-md-3 offset-md-1 col-lg-2 offset-lg-1 sidebar">
             @include('layouts.partials.sidebar')
         </div>
-        <div class="col-md-6 offset-1">
+        <div class="col-md-6 offset-md-1">
             <div>
                 <h2 class="ml-5 mt-5">Replay messages.</h2>
             </div>
@@ -34,7 +34,7 @@
 
 
 
-                        <div class="col-sm-12 col-md-9 col-lg-10 offset-lg-1 mr-5 mt-5">
+                        <div class="col-md-9 col-lg-10 offset-lg-1 mt-5">
                                 {{-- card --}}
 
                                 <div class="card">
