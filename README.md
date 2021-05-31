@@ -20,16 +20,6 @@
    ``` bash
    composer install
    ```
-   
-### Install 'Node package manager' or 'npm'
-  
-   ``` bash
-   npm install
-   ```
-   
-   ``` bash
-   npm run dev
-   ```
 
 ### Copy the '.env.example' file in the '.env' file
     
@@ -53,6 +43,16 @@
 
    ```bash
    php artisan migrate
+   ```
+
+### Install 'Node package manager' or 'npm'
+  
+   ``` bash
+   npm install
+   ```
+   
+   ``` bash
+   npm run dev
    ```
 
 ### Start your server
