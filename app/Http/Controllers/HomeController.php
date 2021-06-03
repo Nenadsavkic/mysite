@@ -34,6 +34,7 @@ class HomeController extends Controller
         $user_image = Auth::user()->user_image;
         $user_ads = Ad::all()->where('user_id', $user->id);
 
+        //dd($user);
 
         return view('home',compact('user','user_image','user_ads'));
     }
@@ -317,6 +318,7 @@ class HomeController extends Controller
         $message->delete();
 
         return redirect()->back()->with('message', 'Message is deleted.');
+
 
     }
 
