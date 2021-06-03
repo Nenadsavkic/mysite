@@ -45,16 +45,6 @@
    php artisan migrate
    ```
 
-### Install 'Node package manager' or 'npm'
-  
-   ``` bash
-   npm install
-   ```
-   
-   ``` bash
-   npm run dev
-   ```
-
 ### Start your server
 
    ```bash
