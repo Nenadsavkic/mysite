@@ -43,7 +43,7 @@
                 <p>If you are on this site, it probably means that I applied for a position in your company, so by reading these lines,
                  you can get some first impressions of me and assess whether my resume meets the needs of the requested position.</p>
 
-                <p>In the hope that we will achieve a successful cooperation.</p>
+                <p>In hope that we will achieve a successful cooperation.</p>
 
                 <p>Sincerely,</p>
 
