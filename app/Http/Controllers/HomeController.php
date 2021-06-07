@@ -47,30 +47,7 @@ class HomeController extends Controller
     {
         return view('aboutMe');
     }
-    public function contactForm(Request $request)
-    {
 
-
-        return view('contactForm');
-
-    }
-
-
-    public function saveImg(Request $request)
-    {
-        $request->validate([
-            'user_image'=> 'mimes:jpeg,jpg,png'
-        ]);
-
-
-            $image = $request->file('user_image');
-            $user_image = time().'.'.$image->extension();
-            $image->move(public_path('images/user_image'), $user_image);
-
-
-            return redirect()->back();
-
-    }
     public function showAdForm()
     {
 

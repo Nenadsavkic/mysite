@@ -31,7 +31,7 @@ Route::get('/home-messages', [App\Http\Controllers\HomeController::class, 'showM
 Route::get('/cars', [App\Http\Controllers\CarsController::class, 'index'])->name('cars');  // Prikaz svih oglasa iz kategorije 'Cars'
 Route::get('/computers', [App\Http\Controllers\ComputersController::class, 'index'])->name('computers'); // Prikaz svih oglasa 'Computers'
 Route::get('/phones', [App\Http\Controllers\PhonesController::class, 'index'])->name('phones'); // Prikaz svih oglasa 'Phones'
-Route::get('/contact', [App\Http\Controllers\HomeController::class, 'contactForm'])             // Kontakt forma
+Route::get('/contact', [App\Http\Controllers\ContactController::class, 'contactForm'])             // Kontakt forma
 ->name('contactForm');
 Route::get('/user-deleteImg/{id}', [App\Http\Controllers\UsersController::class, 'deleteImg'])  // Dugme za brisanje profilne slike
 ->name('user.deleteImg');
@@ -74,5 +74,7 @@ Route::post('/home-replay-store', [App\Http\Controllers\HomeController::class, '
 
 Route::delete('/home-message-delete/{id}', [App\Http\Controllers\HomeController::class, 'deleteMsg'])  // brisanje poruke
 ->name('home.deleteMsg');
+Route::post('/contact', [App\Http\Controllers\ContactController::class, 'contactUsForm'])  // kontakt store
+->name('contact.store');
 
 

@@ -17,7 +17,7 @@
         <div class="col-sm-8 offset-sm-2 col-md-3 offset-md-1 col-lg-2 offset-lg-1 sidebar">
             @include('layouts.partials.sidebar')
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-7 offset-md-1">
+        <div class="col-sm-12 col-md-6 col-lg-7 ">
 
             <div class="row single-ad">
                @if (isset($ad->image1))
