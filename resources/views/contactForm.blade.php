@@ -25,8 +25,20 @@
 
                 <form action="{{ route('contact.store') }}" method="POST">
                   @csrf
-                  <input type="text" name="name" placeholder="Your name" class="form-control forms"><br>
-                  <input type="email" name="email" placeholder="Your email"  class="form-control forms"><br>
+                  <input type="text" name="name" class="form-control forms"
+                  @if (Auth::user())
+                      value={{ Auth::user()->name }}
+                  @else
+                      placeholder="Your name"
+                  @endif
+                  ><br>
+                  <input type="email" name="email"  class="form-control forms"
+                  @if (Auth::user())
+                      value={{ Auth::user()->email }}
+                  @else
+                      placeholder="Your email"
+                  @endif
+                  ><br>
                   <textarea name="message" cols="30" rows="10" class="form-control forms" placeholder="Your message"></textarea><br>
                   <button type="submit" class="btn btn-primary form-control form-button">Send message</button>
 
