@@ -50,10 +50,6 @@ Route::get('/home-messages', [App\Http\Controllers\HomeController::class, 'showM
 
 Route::get('/home-replay', [App\Http\Controllers\HomeController::class, 'replayMsg'])          // odgovor na poruku
 ->name('home.replayMsg');
-
-
-
-
 Route::post('/user-saveImg/{id}', [App\Http\Controllers\UsersController::class, 'saveImg'])   // Postavljanje profilne slike
 ->name('user.saveImg');
 
