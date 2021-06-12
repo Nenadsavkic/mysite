@@ -25,9 +25,9 @@
         <main class="py-4">
             @yield('content')
         </main>
+       @include('layouts.partials.footer')
     </div>
     @yield('page-scripts')
 
-    @include('layouts.partials.footer')
 </body>
 </html>
