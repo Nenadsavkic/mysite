@@ -33,10 +33,10 @@
             </form>
         </div>
       @foreach ($phones as $phone)
-      
+
        <div class="col-sm-12  col-md-6 col-lg-4 mb-5">
         <a class="text-decoration-none text-muted ml-3" href="{{ route('ad.singleAd', ['id'=>$phone->id]) }}">
-            <div class="card text-center mt-5 " style="width: 24rem;">
+            <div class="card text-center mt-5 ">
                 <img src="/images/add_images/{{ $phone->image1 }}" class="card-img-top mainAddImg" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">{{ $phone->title }}</h5>

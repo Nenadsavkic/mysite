@@ -52,6 +52,12 @@ Route::get('/home-replay', [App\Http\Controllers\HomeController::class, 'replayM
 ->name('home.replayMsg');
 Route::post('/user-saveImg/{id}', [App\Http\Controllers\UsersController::class, 'saveImg'])   // Postavljanje profilne slike
 ->name('user.saveImg');
+Route::get('/allUserAds/{id}', [App\Http\Controllers\AdController::class, 'allUserAds'])         // Prikaz svih korisnikovih oglasa
+->name('allUserAds');
+
+
+
+
 
 Route::post('/home-save-ad', [App\Http\Controllers\HomeController::class, 'saveAd'])         // Postavljanje oglasa
 ->name('home.saveAd');

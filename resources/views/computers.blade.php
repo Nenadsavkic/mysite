@@ -34,10 +34,10 @@
             </form>
         </div>
       @foreach ($computers as $computer)
-      
-       <div class="col-sm-12 col-md-6 col-lg-4 mb-5">     
+
+       <div class="col-sm-12 col-md-6 col-lg-4 mb-5">
         <a class="text-decoration-none text-muted ml-3" href="{{ route('ad.singleAd', ['id'=>$computer->id]) }}">
-            <div class="card text-center mt-5 " style="width: 25rem;">
+            <div class="card text-center mt-5">
                 <img src="/images/add_images/{{ $computer->image1 }}" class="card-img-top mainAddImg" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">{{ $computer->title }}</h5>
