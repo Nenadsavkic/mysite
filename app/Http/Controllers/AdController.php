@@ -23,7 +23,7 @@ class AdController extends Controller
      {
          $user = User::find($id);
 
-         $userAds = Ad::all()->where('user_id','==', $id);
+         $userAds = Ad::all()->where('user_id','==', $user->id);
 
          return view('allUserAds', compact('userAds','user'));
 

@@ -17,9 +17,12 @@
 
         <div class="row">
 
-            <div class=" col-xs-8 offset-xs-2 col-md-6  ">
+            <div class=" col-md-12  ">
 
                 <h2 class="mt-5">Here you can see all ads from {{ $user->name }}</h2>
+
+            </div>
+            <div class="col-md-4">
 
                 <img
                 @if (isset($user->user_image))
@@ -30,6 +33,14 @@
                 alt="user_image" class=" img-responsive mt-5 rounded" style="width:300px"  title="Add new image">
 
             </div>
+            <div class="col-md-8 card mt-5">
+                <p class="mt-5 ml-5"> <b> Cotact data of user {{ $user->name }}</b></p>
+                <p class="mt-5 ml-5"> <b> Email: </b> {{ $user->email }}</p>
+                <p class="mt-5 ml-5"> <b> Phone: </b> 06x xxx xxx</p>
+            </div>
+
+
+
 
         </div>
 
