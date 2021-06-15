@@ -24,7 +24,7 @@
                 I worked as an operator on a CNC machine in the Shipyard, and warehouse jobs, then in security, and I am currently employed in
                 a manufacturing company of wooden furniture. </p>
                  <p>But dealing with these jobs, I have never seen myself in these professions for a long time,
-                I have not felt any personal satisfaction, or the possibility of growth and advancement in the company. About 2 years ago,
+                I have not felt any personal satisfaction, or the possibility of growth and advancement in the company. About 3 years ago,
                 out of pure curiosity, I made my first steps in the field of programming. It was pretty clamsy,  because I didn’t
                 even know where I should start. Nobody told me that before learning Php, you should first master HTML and CSS. Like I said the
                 first steps were out of curiosity, to see if it suits to me, can I learn that. And then I saw that I liked it, and that maybe
@@ -43,7 +43,7 @@
                 <p>If you are on this site, it probably means that I applied for a position in your company, so by reading these lines,
                  you can get some first impressions of me and assess whether my resume meets the needs of the requested position.</p>
 
-                <p>In the hope that we will achieve a successful cooperation.</p>
+                <p>In hope that we will achieve a successful cooperation.</p>
 
                 <p>Sincerely,</p>
 

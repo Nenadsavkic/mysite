@@ -14,11 +14,11 @@
 @section('content')
 <div class="container-fluid">
     <div class="row mt-5 mb-5">
-        <div class="col-md-2 sidebar">
+        <div class="col-md-3 offset-md-1 col-lg-2 sidebar">
             @include('layouts.partials.sidebar')
         </div>
 
-                <div class="col-md-5 offset-2 mt-2">
+                <div class="col-md-5 offset-md-2 mt-2">
                    <h2 class="ml-5 pl-5">Create new ad</h2><br><br>
                  <form action="{{ route('home.saveAd') }}" method="POST" enctype="multipart/form-data" class=" p-4">
                     @csrf

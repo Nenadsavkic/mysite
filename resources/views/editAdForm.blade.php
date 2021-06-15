@@ -12,17 +12,17 @@
 @endsection
 
 @section('content')
-<div class="container-fluid m-2">
+<div class="container-fluid">
     <div class="row mt-5 mb-5">
-        <div class="col-md-2 sidebar">
+        <div class="col-md-3 col-lg-2 offset-lg-1 sidebar">
             @include('layouts.partials.sidebar')
         </div>
-        <div class="col-md-8">
+        <div class="col-md-7">
 
 
             <div class="row">
 
-                <div class="col-md-8 offset-3 mt-3">
+                <div class="col-md-8 offset-md-3 mt-3">
                    <h2 class="ml-5 pl-5">Edit ad form</h2><br><br>
                  <form action="{{ route('home.saveEditedAd', ['id' => $ad->id]) }}" method="POST" enctype="multipart/form-data">
                     @csrf

@@ -19,10 +19,10 @@
 </div>
 
 
-<div class="container-fluid mb-5 mt-3">
+<div class="container mb-5 mt-3">
 
     <div class="row">
-        <div class="col-md-6 offset-3">
+        <div class="col-md-6 offset-md-3">
             <form action="{{ route('computers') }}">
                 <label for="type">Sort Computers by price:</label>
                 <select name="type" class="form-control">
@@ -33,10 +33,11 @@
                 <button type="submit" class="btn btn-secondary mt-1 mb-5">Apply</button>
             </form>
         </div>
-      @foreach ($computers as $computer)
-        <a class="text-decoration-none text-muted ml-3" href="{{ route('ad.singleAd', ['id'=>$computer->id]) }}">
-           <div class="col-md-4 ml-5 mb-5">
-            <div class="card text-center mt-5 " style="width: 25rem;">
+	@foreach ($computers as $computer)
+	<div class="col-sm-12 col-md-6 col-lg-4 mb-5">
+        <a class="text-decoration-none text-muted" href="{{ route('ad.singleAd', ['id'=>$computer->id]) }}">
+          
+            <div class="card text-center mt-5 ">
                 <img src="/images/add_images/{{ $computer->image1 }}" class="card-img-top mainAddImg" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">{{ $computer->title }}</h5>
@@ -45,8 +46,9 @@
                   <button class="btn btn-danger float-right">Price: {{ $computer->price }} eur</button>
                 </div>
               </div>
-           </div>
-        </a>
+           
+	</a>
+       </div>
       @endforeach
     </div>
 

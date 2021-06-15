@@ -111,8 +111,8 @@
 
                 </div>
                 @if (auth()->user() && auth()->user()->id !== $ad->user_id)
-                    <div class="col-md-6 offset-3 mt-5">
-                        <h2 class="ml-5 pl-5">Send message to {{ $ad->user->name }}</h2>
+                    <div class=" col-md-6 offset-md-3 mt-5">
+                        <h2>Send message to {{ $ad->user->name }}</h2>
                         <form action="{{ route('home.userMessage', ['id'=>$ad->id]) }}" method="POST">
                         @csrf
                         <label for="title"><b>Title:</b></label>

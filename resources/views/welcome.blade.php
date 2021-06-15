@@ -27,21 +27,21 @@
                 a trenutno sam zaposlen u jednoj firmi koja se bavi proizvodnjom nameštaja.
                 Ali baveći se ovim poslovima, nikada nisam video sebe dugoročno u tim profesijama,
                 nisam osetio nikakvu ličnu satisfakciju, niti mogućnost rasta i napredovanja u kompaniji.
-                Pre oko 2 godine, iz čiste radoznalosti, napravio sam svoje prve korake iz oblasti programiranja.
+                Pre oko 3 godine, iz čiste radoznalosti, napravio sam svoje prve korake iz oblasti programiranja.
                 Bilo je to prilično nespretno, da tako kažem, jer nisam znao ni odakle bih trebao početi.
                 Niko mi nije rekao da pre učenja Php-a, treba prvo savladati HTML i CSS. Kao što rekoh
                 prvi koraci bili su iz radoznalosti, da vidim da li to meni "leži", da li ja to mogu da naučim,
                 a onda sam video da se to meni sviđa, i da bih možda mogao spojiti lepo i korisno.
 
-                Pohadjajuci razne kurseve online, na srpskom i na engleskom jeziku, upoznao sa osnovama web dizajna i programiranja.
+                Pohadjajuci razne kurseve online, na srpskom i na engleskom jeziku, upoznao sam se sa osnovama web dizajna i programiranja.
                 Trenutno sam se fokusirao na Php, MySql i Laravel, i ovaj sajt je pravljen upravo u Laravel-u, ali takodje
                 poznajem solidno HTML, CSS, Bootstrap, Git.
                 </p>
-                <p>Ovaj sajt je zamisljen tako da predstavi mene, i moje do sada steceno znanje iz programiranja i web dizajna,
-                    odnosno on pretstavlja moju radnu biografiju, jer ja nemam radnog iskustva u IT-u.</p>
-                <p>Na ovom sajtu mozete pogledati oglase iz kategorije 'Cars', 'Phones' i 'Computers', naravno ovo nisu pravi oglasi
-                    vec samo simulacija jednog takvog sajta, mozete se registrovati kao novi korisnik, lugovati, postaviti sliku na svoj profil,
-                    kreirati novi oglas, editovati svoje postojece oglase, obrisati, itd...
+                <p>Ovaj sajt je zamišljen tako da predstavi mene, i moje do sada stečeno znanje iz programiranja i web dizajna,
+                    odnosno on pretstavlja moju radnu biografiju, jer ja nemam do sada radnog iskustva u IT-u.</p>
+                <p>Na ovom sajtu možete pogledati oglase iz kategorije 'Cars', 'Phones' i 'Computers', naravno ovo nisu pravi oglasi
+                    već samo simulacija jednog takvog sajta, možete se registrovati kao novi korisnik, ulogovati, postaviti sliku na svoj profil,
+                    kreirati novi oglas, editovati svoje postojeće oglase, obrisati, itd...
                 </p>
                 <p> Ako Vi gledate ovaj sajt, to verovatno znači da sam konkurisao za neku poziciju u
                     Vašoj kompaniji, pa eto, čitajući ove redove, možete steći neke prve utiske o meni
