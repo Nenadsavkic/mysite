@@ -83,9 +83,6 @@ Route::post('/contact', [App\Http\Controllers\ContactController::class, 'contact
 Route::delete('/deleteUser/{id}', [App\Http\Controllers\UsersController::class, 'deleteUser'])  // Brisanje korisnika (Usera)
 ->name('deleteUser');
 
-Route::post('reset_password_without_token', [App\Http\Controllers\AccountsController::class, 'validatePasswordRequest'])
-->name('validatePasswordRequest');
-Route::post('reset_password_with_token', [App\Http\Controllers\AccountsController::class, 'resetPassword'])
-->name('resetPassword');
+
 
 

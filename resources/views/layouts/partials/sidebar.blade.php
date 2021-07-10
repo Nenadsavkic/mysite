@@ -1,9 +1,4 @@
-<?php
-use Illuminate\Foundation\Auth\User;
 
- $admin = User::all()->where('email','savkicn@gmail.com')->first();
- //dd($admin);
-?>
 <img
 @if (Auth::user()->user_image)
    src="{{ asset('/storage/images/'.Auth::user()->user_image) }}"
@@ -36,12 +31,7 @@ onclick="return confirm('Are you sure you want to delete your profile image');">
     @endif
 </a>
 
-@if (Auth::user()->email !== $admin->email)
-
 <a  href="{{ route('home.deleteUser') }}" class="btn btn-danger form-control mt-2"
  onclick="return confirm('Your profile will be deleted, click \'Cancel\' to abort action, click \'Ok\' to continue');">Delete profile</a>
- @endif
 
-@if (Auth::user()->email == $admin->email)
-    <a href="{{ route('showAllUsers') }}" class="btn btn-success form-control mt-2">Show all users</a>
-@endif
+
