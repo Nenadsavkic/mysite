@@ -22,6 +22,8 @@ Route::get('/aboutMe', [App\Http\Controllers\HomeController::class, 'aboutMe'])-
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');        // Home strana profil korisnika
 Route::get('/home-single-ad/{id}', [App\Http\Controllers\HomeController::class, 'showSingleAd']) // Single ad korisnika
 ->name('home.singleAd');
+Route::get('/showAllUsers', [App\Http\Controllers\UsersController::class, 'showAllUsers'])  // Prikaz svih korisnika (Usera)
+->name('showAllUsers');
 
 
 
@@ -78,5 +80,12 @@ Route::delete('/home-message-delete/{id}', [App\Http\Controllers\HomeController:
 ->name('home.deleteMsg');
 Route::post('/contact', [App\Http\Controllers\ContactController::class, 'contactUsForm'])  // kontakt store
 ->name('contact.store');
+Route::delete('/deleteUser/{id}', [App\Http\Controllers\UsersController::class, 'deleteUser'])  // Brisanje korisnika (Usera)
+->name('deleteUser');
+
+Route::post('reset_password_without_token', [App\Http\Controllers\AccountsController::class, 'validatePasswordRequest'])
+->name('validatePasswordRequest');
+Route::post('reset_password_with_token', [App\Http\Controllers\AccountsController::class, 'resetPassword'])
+->name('resetPassword');
 
 
