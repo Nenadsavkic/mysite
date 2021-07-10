@@ -17,11 +17,6 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
-Route::post('reset_password_without_token', [App\Http\Controllers\AccountsController::class, 'validatePasswordRequest'])
-->name('validatePasswordRequest');
-Route::post('reset_password_with_token', [App\Http\Controllers\AccountsController::class, 'resetPassword'])
-->name('resetPassword');
-
 Route::get('/', [App\Http\Controllers\HomeController::class, 'welcome'])->name('welcome');    // Pocetna (biografija)
 Route::get('/aboutMe', [App\Http\Controllers\HomeController::class, 'aboutMe'])->name('aboutMe'); // Biografija engleski
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');        // Home strana profil korisnika
