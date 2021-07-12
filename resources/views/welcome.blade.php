@@ -27,7 +27,7 @@
                 a trenutno sam zaposlen u jednoj firmi koja se bavi proizvodnjom nameštaja.
                 Ali baveći se ovim poslovima, nikada nisam video sebe dugoročno u tim profesijama,
                 nisam osetio nikakvu ličnu satisfakciju, niti mogućnost rasta i napredovanja u kompaniji.
-                Pre oko 2 godine, iz čiste radoznalosti, napravio sam svoje prve korake iz oblasti programiranja.
+                Pre oko 3 godine, iz čiste radoznalosti, napravio sam svoje prve korake iz oblasti programiranja.
                 Bilo je to prilično nespretno, da tako kažem, jer nisam znao ni odakle bih trebao početi.
                 Niko mi nije rekao da pre učenja Php-a, treba prvo savladati HTML i CSS. Kao što rekoh
                 prvi koraci bili su iz radoznalosti, da vidim da li to meni "leži", da li ja to mogu da naučim,
@@ -35,7 +35,7 @@
 
                 Pohadjajući razne kurseve online, na srpskom i na engleskom jeziku, upoznao sa osnovama web dizajna i programiranja.
                 Trenutno sam se fokusirao na Php, MySql i Laravel, i ovaj sajt je pravljen upravo u Laravel-u, ali takodje
-                poznajem solidno HTML, CSS, Bootstrap, Git.
+                poznajem solidno HTML, CSS, Bootstrap, JavaScript, Git.
                 </p>
                 <p>Ovaj sajt je zamišljen tako da predstavi mene, i moje do sada stečeno znanje iz programiranja i web dizajna,
                     odnosno on pretstavlja moju radnu biografiju, jer ja nemam do sada radnog iskustva u IT-u.</p>
