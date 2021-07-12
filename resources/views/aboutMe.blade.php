@@ -24,14 +24,14 @@
                 I worked as an operator on a CNC machine in the Shipyard, and warehouse jobs, then in security, and I am currently employed in
                 a manufacturing company of wooden furniture. </p>
                  <p>But dealing with these jobs, I have never seen myself in these professions for a long time,
-                I have not felt any personal satisfaction, or the possibility of growth and advancement in the company. About 2 years ago,
+                I have not felt any personal satisfaction, or the possibility of growth and advancement in the company. About 3 years ago,
                 out of pure curiosity, I made my first steps in the field of programming. It was pretty clamsy,  because I didn’t
                 even know where I should start. Nobody told me that before learning Php, you should first master HTML and CSS. Like I said the
                 first steps were out of curiosity, to see if it suits to me, can I learn that. And then I saw that I liked it, and that maybe
                 I could put it together nice and usefull.</p>
                 <p> Then I found a great online school. So while learning online, I learned the basics of web design and programming.
                  I am currently focusing on Php, MySql and Laravel, and this site was made in Laravel, but I also have solid
-                 knowledge of HTML, CSS, Bootstrap, Git.</p>
+                 knowledge of HTML, CSS, Bootstrap, JavaScript, Git.</p>
 
                 <p>This site is designed to present me, and my knowledge gained so far in programming and web design, it represents
                 my resume, because I have no work experience untill now in IT.</p>
