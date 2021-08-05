@@ -63,6 +63,7 @@
     <div class=" container row mt-5 contact">
         <div class="col-6 offset-3 mt-3 ">
             <p>Mozete me kontaktirati putem maila: <span>savkicn@gmail.com</span></p>
+            <p>Ili putem telefona: 061 174 09 89</p>
        </div>
     </div>
 
