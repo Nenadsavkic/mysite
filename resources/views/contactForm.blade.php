@@ -18,8 +18,12 @@
         <div class="col-md-6 offset-md-3 mt-5">
             <p class="fs-1 mt-5"> <b>If you have any sugestions, or you want to contact me, please
                 fill out this contact form to send message.</b></p>
-                <br><br>
-                <form action="{{ route('contactForm') }}" method="POST">
+		<br><br>
+
+                 @include('layouts.partials.flashMessages')
+
+
+                <form action="{{ route('contact.store') }}" method="POST">
                   @csrf
 		  <input type="text" name="name" class="form-control forms" 
                   @if(Auth::user()) 

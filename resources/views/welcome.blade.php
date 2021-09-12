@@ -35,7 +35,7 @@
 
                 Pohadjajuci razne kurseve online, na srpskom i na engleskom jeziku, upoznao sam se sa osnovama web dizajna i programiranja.
                 Trenutno sam se fokusirao na Php, MySql i Laravel, i ovaj sajt je pravljen upravo u Laravel-u, ali takodje
-                poznajem solidno HTML, CSS, Bootstrap, Git.
+                poznajem solidno HTML, CSS, Bootstrap, JavaScript, Git.
                 </p>
                 <p>Ovaj sajt je zamišljen tako da predstavi mene, i moje do sada stečeno znanje iz programiranja i web dizajna,
                     odnosno on pretstavlja moju radnu biografiju, jer ja nemam do sada radnog iskustva u IT-u.</p>
@@ -62,7 +62,7 @@
     </article>
     <div class=" container row mt-5 contact">
         <div class="col-6 offset-3 mt-3 ">
-            <p>Mozete me kontaktirati putem maila: <span>savkicn@gmail.com</span></p>
+            <p>Mozete me kontaktirati na e-mail: <span>savkicn@gmail.com</span></p>
        </div>
     </div>
 

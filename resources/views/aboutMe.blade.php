@@ -31,7 +31,7 @@
                 I could put it together nice and usefull.</p>
                 <p> Then I found a great online school. So while learning online, I learned the basics of web design and programming.
                  I am currently focusing on Php, MySql and Laravel, and this site was made in Laravel, but I also have solid
-                 knowledge of HTML, CSS, Bootstrap, Git.</p>
+                 knowledge of HTML, CSS, Bootstrap, JavaScript, Git.</p>
 
                 <p>This site is designed to present me, and my knowledge gained so far in programming and web design, it represents
                 my resume, because I have no work experience untill now in IT.</p>

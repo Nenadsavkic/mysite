@@ -111,7 +111,8 @@
 
                 </div>
                 @if (auth()->user() && auth()->user()->id !== $ad->user_id)
-                    <div class=" col-md-6 offset-md-3 mt-5">
+		    <div class=" col-md-6 offset-md-3 mt-5">
+                        <a href="{{ route('allUserAds', ['id'=>$ad->user_id]) }}" class="btn btn-success float-right">Show all ads of this user</a>
                         <h2>Send message to {{ $ad->user->name }}</h2>
                         <form action="{{ route('home.userMessage', ['id'=>$ad->id]) }}" method="POST">
                         @csrf

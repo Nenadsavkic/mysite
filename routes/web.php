@@ -22,6 +22,8 @@ Route::get('/aboutMe', [App\Http\Controllers\HomeController::class, 'aboutMe'])-
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');        // Home strana profil korisnika
 Route::get('/home-single-ad/{id}', [App\Http\Controllers\HomeController::class, 'showSingleAd']) // Single ad korisnika
 ->name('home.singleAd');
+Route::get('/showAllUsers', [App\Http\Controllers\UsersController::class, 'showAllUsers'])  // Prikaz svih korisnika (Usera)
+->name('showAllUsers');
 
 
 
@@ -31,7 +33,7 @@ Route::get('/home-messages', [App\Http\Controllers\HomeController::class, 'showM
 Route::get('/cars', [App\Http\Controllers\CarsController::class, 'index'])->name('cars');  // Prikaz svih oglasa iz kategorije 'Cars'
 Route::get('/computers', [App\Http\Controllers\ComputersController::class, 'index'])->name('computers'); // Prikaz svih oglasa 'Computers'
 Route::get('/phones', [App\Http\Controllers\PhonesController::class, 'index'])->name('phones'); // Prikaz svih oglasa 'Phones'
-Route::get('/contact', [App\Http\Controllers\HomeController::class, 'contactForm'])             // Kontakt forma
+Route::get('/contact', [App\Http\Controllers\ContactController::class, 'contactForm'])             // Kontakt forma
 ->name('contactForm');
 Route::get('/user-deleteImg/{id}', [App\Http\Controllers\UsersController::class, 'deleteImg'])  // Dugme za brisanje profilne slike
 ->name('user.deleteImg');
@@ -50,6 +52,10 @@ Route::get('/home-messages', [App\Http\Controllers\HomeController::class, 'showM
 
 Route::get('/home-replay', [App\Http\Controllers\HomeController::class, 'replayMsg'])          // odgovor na poruku
 ->name('home.replayMsg');
+
+Route::get('/allUserAds/{id}', [App\Http\Controllers\AdController::class, 'allUserAds'])         // Prikaz svih korisnikovih oglasa
+->name('allUserAds');
+
 
 
 
@@ -75,4 +81,9 @@ Route::post('/home-replay-store', [App\Http\Controllers\HomeController::class, '
 Route::delete('/home-message-delete/{id}', [App\Http\Controllers\HomeController::class, 'deleteMsg'])  // brisanje poruke
 ->name('home.deleteMsg');
 
+Route::post('/contact', [App\Http\Controllers\ContactController::class, 'contactUsForm'])  // kontakt store
+->name('contact.store');
+
+Route::delete('/deleteUser/{id}', [App\Http\Controllers\UsersController::class, 'deleteUser'])  // Brisanje korisnika (Usera)
+->name('deleteUser');
 

@@ -39,8 +39,8 @@
             <div class="card text-center mt-5">
                 <img src="/images/add_images/{{ $phone->image1 }}" class="card-img-top mainAddImg" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">{{ $phone->title }}</h5>
-                  <p class="card-text">{{ $phone->body }}</p>
+                  <h5 class="card-title pt-5 pb-5">{{ $phone->title }}</h5>
+                  
                   <button class="btn btn-primary float-left ">Views: {{ $phone->views }}</button>
                   <button class="btn btn-danger float-right">Price: {{ $phone->price }} eur</button>
 

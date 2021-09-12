@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Ad;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class AdController extends Controller
@@ -16,5 +17,15 @@ class AdController extends Controller
           }
 
           return view('singleAdCategory', ['ad' => $ad]);
+     }
+
+     public function allUserAds($id)
+     {
+         $user = User::find($id);
+
+         $userAds = Ad::all()->where('user_id','==', $user->id);
+
+         return view('allUserAds', compact('userAds','user'));
+
      }
 }

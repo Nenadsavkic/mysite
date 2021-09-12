@@ -35,4 +35,21 @@ class UsersController extends Controller
 
        return redirect()->back();
     }
+
+    public function showAllUsers()
+    {
+        $user = Auth::user();
+        $allUsers = User::all()->except(['id',6]);
+
+        return view('allUsers',compact('allUsers','user'));
+    }
+
+    public function deleteUser($id)
+    {
+        $user = User::find($id);
+
+        $user->delete();
+
+        return redirect()->back()->with('message', 'User is successfully deleted.');
+    }
 }

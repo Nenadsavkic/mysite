@@ -40,8 +40,8 @@
             <div class="card text-center mt-5 ">
                 <img src="/images/add_images/{{ $computer->image1 }}" class="card-img-top mainAddImg" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">{{ $computer->title }}</h5>
-                  <p class="card-text">{{ $computer->body }}</p>
+                  <h5 class="card-title pt-5 pb-5">{{ $computer->title }}</h5>
+                  
                   <button class="btn btn-primary float-left">Views: {{ $computer->views }}</button>
                   <button class="btn btn-danger float-right">Price: {{ $computer->price }} eur</button>
                 </div>

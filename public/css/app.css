@@ -10106,12 +10106,8 @@ p {
   border-radius: 25%;
 }
 
-.sidebar {
-  margin-left: 70px;
-}
-
 .singleAdImg img {
-  max-height: 200px;
+  max-height: 400px !important;
 }
 
 .category-img {

@@ -50,10 +50,35 @@ class HomeController extends Controller
     {
 
 
-        return view('contactForm');
+	    return view('contactForm');
 
     }
 
+    public function emailContact(Request $request) {
+	    
+        $data = [];
+        $this->validate($request, [
+            'name' => 'required',
+            'email' => 'required | email',
+            'body' => 'required'
+        ]);
+
+            $data =[
+                'name' => $request->name,
+                'email' => $request->email,
+                'body' => $request->body
+	    ];
+
+      //dd($data['email']);
+
+        Mail::send('contactForm', $data, function($message) use($data){
+            $message->from($data['name']);
+            $message->from($data['email']);
+            $message->to('savkicn@gmail.com');
+        });	
+
+        return redirect()->back()->with('message', 'Your email is sent');
+    } 
 
     public function saveImg(Request $request)
     {
@@ -288,7 +313,14 @@ class HomeController extends Controller
     {
         $sender = User::find($request->sender_id);
         $ad = Ad::find($request->ad_id);
-       // $ad_name = Ad::find($request->ad_name);
+	
+	// $ad_name = Ad::find($request->ad_name);
+	
+	$request->validate([
+
+        'body' => 'required',
+
+        ]);
 
         // New message
 
