@@ -17,14 +17,17 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
-Route::get('/', [App\Http\Controllers\HomeController::class, 'welcome'])->name('welcome');    // Pocetna (biografija)
-Route::get('/aboutMe', [App\Http\Controllers\HomeController::class, 'aboutMe'])->name('aboutMe'); // Biografija engleski
+Route::get('/welcome', [App\Http\Controllers\HomeController::class, 'welcome'])->name('welcome');    // Pocetna (biografija)
+Route::get('/', [App\Http\Controllers\HomeController::class, 'aboutMe'])->name('aboutMe'); // Biografija engleski
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');        // Home strana profil korisnika
 Route::get('/home-single-ad/{id}', [App\Http\Controllers\HomeController::class, 'showSingleAd']) // Single ad korisnika
 ->name('home.singleAd');
 Route::get('/showAllUsers', [App\Http\Controllers\UsersController::class, 'showAllUsers'])  // Prikaz svih korisnika (Usera)
 ->name('showAllUsers');
 
+Route::get('/search-cars',[App\Http\Controllers\CarsController::class, 'search'])->name('searchCars');  //  search Cars
+Route::get('/search-computers',[App\Http\Controllers\ComputersController::class, 'search'])->name('searchComputers');  //  search Computers
+Route::get('/search-phones',[App\Http\Controllers\PhonesController::class, 'search'])->name('searchPhones');  //  search Phones
 
 
 

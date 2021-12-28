@@ -33,6 +33,15 @@ class CarsController extends Controller
         return view('cars',['cars'=>$cars]);
     }
 
+      public function search()
+   {
+       $search_text = $_GET['query'];
+
+       $cars = Ad::where('title', 'LIKE', '%'.$search_text.'%')->where('category_id', 1)->get();
+
+       return view('searchCars',compact('cars'));
+   }
+
     /**
      * Show the form for creating a new resource.
      *

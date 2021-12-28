@@ -10212,3 +10212,16 @@ p {
 .footer-mail {
   width: 300px;
 }
+
+.myDesigns a {
+  color: #D2691E;
+}
+
+.myDesigns a:hover {
+  color: #f1893e;
+  text-decoration: none;
+}
+
+.header {
+  width: 80%;
+}

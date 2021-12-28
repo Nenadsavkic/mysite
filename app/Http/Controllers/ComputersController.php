@@ -30,6 +30,16 @@ class ComputersController extends Controller
 
     }
 
+    public function search()
+    {
+        $search_text = $_GET['query'];
+
+        $computers = Ad::where('title', 'LIKE', '%'.$search_text.'%')->where('category_id', 2)->get();
+
+        return view('searchComputers',compact('computers'));
+
+    }
+
     /**
      * Show the form for creating a new resource.
      *

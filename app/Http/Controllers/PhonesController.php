@@ -29,6 +29,16 @@ class PhonesController extends Controller
         return view('phones',['phones' => $phones]);
     }
 
+     public function search()
+    {
+        $search_text = $_GET['query'];
+
+        $phones = Ad::where('title', 'LIKE', '%'.$search_text.'%')->where('category_id', 3)->get();
+
+        return view('searchPhones',compact('phones'));
+
+    }
+
     /**
      * Show the form for creating a new resource.
      *

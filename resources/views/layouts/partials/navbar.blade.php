@@ -13,14 +13,12 @@
             <ul class="navbar-nav ml-auto mr-5">
 
                     <li class=" nav-item mr-3">
-                        <a href="/" class="nav-link">O meni</a>
+                        <a href="{{ route('welcome') }}" class="nav-link"></a>
                      </li>
                      <li class=" nav-item mr-3">
                         <a href="{{ route('aboutMe') }}" class="nav-link">About me</a>
                      </li>
-                     <li class=" nav-item mr-3">
-                        <a href="{{ route('home') }}" class="nav-link">Home</a>
-                     </li>
+               
                      <li class=" nav-item mr-3">
                         <a href="{{ route('cars') }}" class="nav-link">Cars</a>
                      </li>
@@ -33,7 +31,12 @@
 
                     <li class=" nav-item mr-3">
                        <a href="{{ route('contactForm') }}" class="nav-link">Contact</a>
+		    </li>
+                     @if (auth()->check())
+                    <li class=" nav-item mr-3">
+                        <a href="{{ route('home') }}" class="nav-link">My page</a>
                     </li>
+                    @endif
 
             </ul>
 

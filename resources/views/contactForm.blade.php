@@ -5,8 +5,27 @@
 @endsection
 
 @section('content-title')
-    <div class="container justify-content-center">
-        <h1 class="text-light">Contact form</h1>
+      <div class="container justify-content-center">
+
+        <div class="row header">
+            <div class="  myDesigns col-12 col-lg-2 text-center mt-2">
+                <a href="https://www.redbubble.com/people/nenad00x/shop?asc=u&ref=account-nav-dropdown"
+                    target="blank">
+                        <h4></h4></a>
+            </div>
+
+              <h1 class="text-light col-12 col-md-8 offset-md-2 col-lg-8 offset-lg-0 text-center">
+                  Contact form</h1>
+
+            <div class=" myDesigns col-12 col-lg-2 text-center mt-2">
+                <a href="https://www.redbubble.com/people/nenad00x/shop?asc=u&ref=account-nav-dropdown"
+                   target="blank">
+                        <h4></h4></a>
+            </div>
+        </div>
+
+
+
     </div>
 @endsection
 
