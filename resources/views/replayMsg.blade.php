@@ -14,7 +14,7 @@
 @section('content')
 <div class="container-fluid">
     <div class="row mt-5 mb-5">
-        <div class=" col-md-3 offset-md-1 col-lg-2 offset-lg-1 sidebar">
+        <div class="col-md-3 offset-md-1 col-lg-2 offset-lg-1 sidebar">
             @include('layouts.partials.sidebar')
         </div>
         <div class="col-md-6 offset-md-1">
@@ -30,7 +30,7 @@
 
 
 
-                    @foreach ($messages as $message)
+
 
 
 
@@ -43,12 +43,26 @@
                                          <p class="float-right">Ad name: {{ $message->ad_name }}</p>
                                     </div>
                                     <div class="card-body message-body">
-                                        <p class="float-left">Sender: {{ $message->sender->name }}</p>
-                                        <p class="float-right">Created at: {{ $message->created_at->format('d M Y') }}</p><br><br>
-                                        <p class="card-text message-text">{{ $message->body }}</p><br>
+                                        <div class="message-sender bg-primary p-3">
+                                            <p class="float-left">Sender: {{ $message->sender->name }}</p>
+                                            <p class="float-right">Created at: {{ $message->created_at->format('d M Y') }}</p>
+                                            <br>
+                                            <p class="card-text message-text">{{ $message->body }}</p>
+                                        </div>
+                                        <br>
+                                        @if (isset($message->replay))
 
+                                        <div class="message-receiver bg-secondary p-3">
+                                            <p class="float-left">User: {{ $message->receiver->name }}</p>
+                                            <p class="float-right">Created at: {{ $message->created_at->format('d M Y') }}</p>
+                                            <br>
+                                            <p class="card-text message-text">{{ $message->replay }}</p>
+                                        </div>
+
+                                        @endif
                                     </div>
-                                    <form action="{{ route('home.replayMsgStore') }}" method="post" class="p-3">
+
+                                    <form action="{{ route('replayMsgStore', ['id'=>$message->id]) }}" method="post" class="p-3">
 
                                         @csrf
                                         <input type="hidden" name="sender_id" value="{{ $sender_id }}">
@@ -64,7 +78,7 @@
                             {{-- card end --}}
 
                         </div>
-                    @endforeach
+
 
                 </div>
 

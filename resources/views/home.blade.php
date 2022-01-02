@@ -35,7 +35,7 @@
 
                     {{-- card --}}
                     <div class="col-md-6">
-                        <a class="text-decoration-none text-muted" href="{{ route('home.singleAd', ['id'=>$ad->id])}}">
+                        <a class="text-decoration-none text-muted" href="{{ route('singleAd', ['id'=>$ad->id])}}">
                          <div class="card text-center mt-5">
                              <img src="/images/add_images/{{ $ad->image1 }}" class="card-img-top img-fluid" alt="...">
                              <div class="card-body">

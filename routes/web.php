@@ -1,5 +1,13 @@
 <?php
 
+use App\Http\Controllers\AdController;
+use App\Http\Controllers\CarsController;
+use App\Http\Controllers\ComputersController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\MessageController;
+use App\Http\Controllers\PhonesController;
+use App\Http\Controllers\UsersController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -17,76 +25,63 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
-Route::get('/welcome', [App\Http\Controllers\HomeController::class, 'welcome'])->name('welcome');    // Pocetna (biografija)
-Route::get('/', [App\Http\Controllers\HomeController::class, 'aboutMe'])->name('aboutMe'); // Biografija engleski
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');        // Home strana profil korisnika
-Route::get('/home-single-ad/{id}', [App\Http\Controllers\HomeController::class, 'showSingleAd']) // Single ad korisnika
-->name('home.singleAd');
-Route::get('/showAllUsers', [App\Http\Controllers\UsersController::class, 'showAllUsers'])  // Prikaz svih korisnika (Usera)
+Route::get('/', [HomeController::class, 'welcome'])->name('welcome');    // Pocetna (biografija)
+Route::get('/aboutMe', [HomeController::class, 'aboutMe'])->name('aboutMe'); // Biografija engleski
+Route::get('/home', [HomeController::class, 'index'])->name('home');        // Home strana profil korisnika
+Route::get('/home-single-ad/{id}', [AdController::class, 'showSingleAd']) // Single ad korisnika
+->name('singleAd');
+Route::get('/showAllUsers', [UsersController::class, 'showAllUsers'])  // Prikaz svih korisnika (Usera)
 ->name('showAllUsers');
 
-Route::get('/search-cars',[App\Http\Controllers\CarsController::class, 'search'])->name('searchCars');  //  search Cars
-Route::get('/search-computers',[App\Http\Controllers\ComputersController::class, 'search'])->name('searchComputers');  //  search Computers
-Route::get('/search-phones',[App\Http\Controllers\PhonesController::class, 'search'])->name('searchPhones');  //  search Phones
 
-
-
-Route::get('/home-messages', [App\Http\Controllers\HomeController::class, 'showMessages']) // Prikaz poruke korisnika
-->name('home.showMessages');
-Route::get('/cars', [App\Http\Controllers\CarsController::class, 'index'])->name('cars');  // Prikaz svih oglasa iz kategorije 'Cars'
-Route::get('/computers', [App\Http\Controllers\ComputersController::class, 'index'])->name('computers'); // Prikaz svih oglasa 'Computers'
-Route::get('/phones', [App\Http\Controllers\PhonesController::class, 'index'])->name('phones'); // Prikaz svih oglasa 'Phones'
-Route::get('/contact', [App\Http\Controllers\ContactController::class, 'contactForm'])             // Kontakt forma
+Route::get('/home-messages', [MessageController::class, 'showMessages']) // Prikaz poruke korisnika
+->name('showUserMessages');
+Route::get('/cars', [CarsController::class, 'index'])->name('cars');  // Prikaz svih oglasa iz kategorije 'Cars'
+Route::get('/computers', [ComputersController::class, 'index'])->name('computers'); // Prikaz svih oglasa 'Computers'
+Route::get('/phones', [PhonesController::class, 'index'])->name('phones'); // Prikaz svih oglasa 'Phones'
+Route::get('/contact', [ContactController::class, 'contactForm'])             // Kontakt forma
 ->name('contactForm');
-Route::get('/user-deleteImg/{id}', [App\Http\Controllers\UsersController::class, 'deleteImg'])  // Dugme za brisanje profilne slike
+Route::get('/user-deleteImg/{id}', [UsersController::class, 'deleteImg'])  // Dugme za brisanje profilne slike
 ->name('user.deleteImg');
-Route::get('/home-ad-form', [App\Http\Controllers\HomeController::class, 'showAdForm'])        // Forma za unos oglasa
-->name('home.showAdForm');
-Route::get('/home-editAd-form/{id}', [App\Http\Controllers\HomeController::class, 'editAdForm']) // Form za editovanje oglasa
-->name('home.adEditForm');
-Route::get('/home-delete-user', [App\Http\Controllers\HomeController::class, 'deleteUser'])      // Brisanje korisnickog profila
-->name('home.deleteUser');
+Route::get('/home-ad-form', [AdController::class, 'showAdForm'])        // Forma za unos oglasa
+->name('showAdForm');
+Route::get('/home-editAd-form/{id}', [AdController::class, 'editAdForm']) // Form za editovanje oglasa
+->name('adEditForm');
 
-Route::get('/ad-single-ad/{id}', [App\Http\Controllers\AdController::class, 'index'])         // Prikaz single oglasa iz bilo koje kategorije
+Route::get('/ad-single-ad/{id}', [AdController::class, 'index'])         // Prikaz single oglasa iz bilo koje kategorije
 ->name('ad.singleAd');
 
-Route::get('/home-messages', [App\Http\Controllers\HomeController::class, 'showMessages'])    // prikaz poruke
-->name('home.showUserMessages');
-
-Route::get('/home-replay', [App\Http\Controllers\HomeController::class, 'replayMsg'])          // odgovor na poruku
-->name('home.replayMsg');
-
-Route::get('/allUserAds/{id}', [App\Http\Controllers\AdController::class, 'allUserAds'])         // Prikaz svih korisnikovih oglasa
+Route::get('/home-replay/{id}', [MessageController::class, 'replayMsg'])          // odgovor na poruku
+->name('replayMsg');
+Route::post('/user-saveImg/{id}', [UsersController::class, 'saveImg'])   // Postavljanje profilne slike
+->name('user.saveImg');
+Route::get('/allUserAds/{id}', [AdController::class, 'allUserAds'])         // Prikaz svih korisnikovih oglasa
 ->name('allUserAds');
 
 
 
 
 
-Route::post('/user-saveImg/{id}', [App\Http\Controllers\UsersController::class, 'saveImg'])   // Postavljanje profilne slike
-->name('user.saveImg');
+Route::post('/home-save-ad', [AdController::class, 'saveAd'])         // Postavljanje oglasa
+->name('saveAd');
 
-Route::post('/home-save-ad', [App\Http\Controllers\HomeController::class, 'saveAd'])         // Postavljanje oglasa
-->name('home.saveAd');
+Route::delete('/home-ad-delete/{id}', [AdController::class, 'adDelete'])  // Brisanje oglasa
+->name('adDelete');
 
-Route::delete('/home-ad-delete/{id}', [App\Http\Controllers\HomeController::class, 'adDelete'])  // Brisanje oglasa
-->name('home.adDelete');
+Route::post('/home-save-editedAd/{id}', [AdController::class, 'saveEditedAd']) // Cuvanje editovanog oglasa
+->name('saveEditedAd');
 
-Route::post('/home-save-editedAd/{id}', [App\Http\Controllers\HomeController::class, 'saveEditedAd']) // Cuvanje editovanog oglasa
-->name('home.saveEditedAd');
+Route::post('/home-user-message/{id}', [MessageController::class, 'userMessage'])  // Poruke korisnika
+->name('userMessage');
 
-Route::post('/home-user-message/{id}', [App\Http\Controllers\HomeController::class, 'userMessage'])  // Poruke
-->name('home.userMessage');
+Route::post('/home-replay-store/{id}', [MessageController::class, 'replayMsgStore'])   // Cuvanje odgovora na poruku
+->name('replayMsgStore');
 
-Route::post('/home-replay-store', [App\Http\Controllers\HomeController::class, 'replayMsgStore'])   // Cuvanje odgovora na poruku
-->name('home.replayMsgStore');
-
-Route::delete('/home-message-delete/{id}', [App\Http\Controllers\HomeController::class, 'deleteMsg'])  // brisanje poruke
-->name('home.deleteMsg');
-
-Route::post('/contact', [App\Http\Controllers\ContactController::class, 'contactUsForm'])  // kontakt store
+Route::delete('/home-message-delete/{id}', [MessageController::class, 'deleteMsg'])  // brisanje poruke
+->name('deleteMsg');
+Route::post('/contact', [ContactController::class, 'contactUsForm'])  // kontakt store
 ->name('contact.store');
+Route::delete('/deleteProfile/{id}', [UsersController::class, 'deleteProfile'])  // Brisanje korisnickog profila
+->name('deleteProfile');
 
-Route::delete('/deleteUser/{id}', [App\Http\Controllers\UsersController::class, 'deleteUser'])  // Brisanje korisnika (Usera)
-->name('deleteUser');
-
+Route::delete('/delete-users/{id}', [UsersController::class, 'deleteUser'])->name('deleteUser'); // Brisanje korisnika admin opcija

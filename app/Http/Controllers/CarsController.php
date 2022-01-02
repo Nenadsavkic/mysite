@@ -13,7 +13,7 @@ class CarsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
 
 
@@ -25,6 +25,10 @@ class CarsController extends Controller
 
             $cars = Ad::all()->where('category_id', 1)->sortByDesc('price');
 
+	}elseif(isset(request()->search_text)){
+            $search_text = $request->search_text;
+
+            $cars = Ad::where('title', 'LIKE', '%'.$search_text.'%')->where('category_id', 1)->get();
         }else{
             $cars = Ad::all()->where('category_id', 1);
         }

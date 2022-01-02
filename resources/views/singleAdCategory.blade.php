@@ -110,11 +110,12 @@
                     </article>
 
                 </div>
-                @if (auth()->user() && auth()->user()->id !== $ad->user_id)
-		    <div class=" col-md-6 offset-md-3 mt-5">
+		@if (auth()->user() && auth()->user()->id !== $ad->user_id)
+
+		    <div class=" col-md-10 offset-md-1 col-lg-8 offset-lg-2 mt-5">
                         <a href="{{ route('allUserAds', ['id'=>$ad->user_id]) }}" class="btn btn-success float-right">Show all ads of this user</a>
                         <h2>Send message to {{ $ad->user->name }}</h2>
-                        <form action="{{ route('home.userMessage', ['id'=>$ad->id]) }}" method="POST">
+                        <form action="{{ route('userMessage', ['id'=>$ad->id]) }}" method="POST">
                         @csrf
                         <label for="title"><b>Title:</b></label>
                         <input type="text" name="title" class="form-control forms" placeholder="Title">

@@ -50,11 +50,11 @@
                        <div class="col-md-12 text-center mt-5 ad-data">
 
                             <h2>{{ $ad->title }} <span class="btn btn-success float-left">{{ $ad->category->name }}</span>
-                                <a href="{{ route('home.adEditForm', ['id'=>$ad->id]) }}" class="btn btn-secondary float-right">Edit ad</a> </h2>
+                                <a href="{{ route('adEditForm', ['id'=>$ad->id]) }}" class="btn btn-secondary float-right">Edit ad</a> </h2>
                             <p class="mt-5">{{ $ad->body }}</p>
                             <button class="btn btn-primary float-left mt-5"> Price: {{ $ad->price }} eur</button>
 
-                            <form action="{{ route('home.adDelete', ['id'=>$ad->id]) }}" method="post">
+                            <form action="{{ route('adDelete', ['id'=>$ad->id]) }}" method="post">
                                 @csrf
                                 @method('delete')
                                 <button onclick="return confirm('Are you sure you want to delete this ad?');" type='submit' class="btn btn-small btn-danger float-right mt-5">

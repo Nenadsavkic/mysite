@@ -102,7 +102,7 @@ p {
 }
 
 .singleAdImg img{
-    max-height: 400px !important;
+    max-height: 400px;
 }
 
 .category-img {
@@ -193,7 +193,6 @@ p {
 .footer-mail{
     width: 300px;
 }
-
 .myDesigns a{
    color: #D2691E;
 }
@@ -204,6 +203,23 @@ p {
 .header {
     width: 80%;
 }
+.verify-email{
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+.message-receiver, .message-sender{
+
+    border-radius: 15px;
+
+}
+
+
+
+
+
+
+
+
 
 
 

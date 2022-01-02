@@ -73,7 +73,12 @@
        </div>
       @endforeach
     </div>
-
+      
+   @if ($cars->count() == 0 && request()->search_text == true)
+        <div class="alert alert-primary">
+            <p class="text-center mt-2">Sorry, your search has no result. Please try again.</p>
+        </div>
+    @endif
 
 </div>
 

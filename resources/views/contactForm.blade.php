@@ -34,7 +34,7 @@
 <div class="container mb-5">
 
     <div class="row">
-        <div class="col-md-6 offset-md-3 mt-5">
+        <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3 mt-5">
             <p class="fs-1 mt-5"> <b>If you have any sugestions, or you want to contact me, please
                 fill out this contact form to send message.</b></p>
 		<br><br>

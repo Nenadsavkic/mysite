@@ -14,17 +14,17 @@
 @section('content')
 <div class="container-fluid">
     <div class="row mt-5 mb-5">
-        <div class="col-md-3 col-lg-2 offset-lg-1 sidebar">
+        <div class="col-md-10 offset-md-1 col-lg-2 sidebar">
             @include('layouts.partials.sidebar')
         </div>
-        <div class="col-md-7">
+        
 
 
-            <div class="row">
+           
 
-                <div class="col-md-8 offset-md-3 mt-3">
+                <div class="col-md-10 offset-md-1 col-lg-6 offset-lg-1 mt-3">
                    <h2 class="ml-5 pl-5">Edit ad form</h2><br><br>
-                 <form action="{{ route('home.saveEditedAd', ['id' => $ad->id]) }}" method="POST" enctype="multipart/form-data">
+                 <form action="{{ route('saveEditedAd', ['id' => $ad->id]) }}" method="POST" enctype="multipart/form-data">
                     @csrf
                    <label for="title"><b>Ad Tile:</b></label>
                    <input type="text" name="title" value="{{ $ad->title }}" class="form-control forms" placeholder="Title"><br>
@@ -41,7 +41,10 @@
                    <input type="file" name="image4" class="form-control forms"><br>
                    <input type="file" name="image5" class="form-control forms"><br>
                    <label for="category"><b>Select add category:</b></label>
-                   <select name="category" class="form-control forms">
+		   <select name="category" class="form-control forms">
+
+                        <option value="{{ $ad->category->id }}">{{ $ad->category->name }}</option>
+
                        @foreach ($categories as $category)
                            <option value="{{ $category->id }}">{{ $category->name }}</option>
                        @endforeach
@@ -49,10 +52,10 @@
                    <br>
                    <button type="submit" class="btn btn-primary form-control form-button">Save ad</button>
                  </form>
+               </div>
+           
 
-            </div>
-
-        </div>
+        
     </div>
 </div>
 @endsection

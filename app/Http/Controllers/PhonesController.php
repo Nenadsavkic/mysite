@@ -12,7 +12,7 @@ class PhonesController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
         if (isset(request()->type) && request()->type == 'lower'){
 
@@ -22,6 +22,11 @@ class PhonesController extends Controller
 
             $phones = Ad::all()->where('category_id', 3)->sortByDesc('price');
 
+	}elseif(isset(request()->search_text)){
+
+            $search_text = $request->search_text;
+
+            $phones = Ad::where('title', 'LIKE', '%'.$search_text.'%')->where('category_id', 3)->get();
         }else{
             $phones = Ad::all()->where('category_id', 3);
         }

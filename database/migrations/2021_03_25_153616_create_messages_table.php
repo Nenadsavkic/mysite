@@ -17,12 +17,15 @@ class CreateMessagesTable extends Migration
             $table->id();
             $table->string('title')->nullable();
             $table->string('ad_name');
-            $table->text('body');
+	    $table->text('body');
+	    $table->text('replay')->nullable();
             $table->unsignedBigInteger('sender_id');
             $table->unsignedBigInteger('receiver_id');
             $table->unsignedBigInteger('ad_id');
             $table->timestamps();
-            $table->foreign('ad_id')->references('id')->on('ads')->cascadeOnDelete();
+	    $table->foreign('ad_id')->references('id')->on('ads')->cascadeOnDelete();
+	    $table->foreign('sender_id')->references('id')->on('users')->cascadeOnDelete();
+	    $table->foreign('receiver_id')->references('id')->on('users')->cascadeOnDelete();
 
         });
     }
