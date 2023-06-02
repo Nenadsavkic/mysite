@@ -39,7 +39,7 @@
             <div class="col-md-8 mt-5">
 
 
-                <p>Poštovanje, ja sam Nenad Savkić, ovaj sajt sam osmislio u cilju predstavljanja
+                <p>Poštovanje Vama, ja sam Nenad Savkić, ovaj sajt sam osmislio u cilju predstavljanja
                     sebe i svog znanja iz oblasti programiranja. Završio sam srednju mašinsku školu
                     , smer "Pogonski tehničar", radio sam razne poslove u životu do sada, radio sam
                  kao operater na CNC mašini u Brodogradilištu, i magacinske poslove, zatim u obezbedjenju,
