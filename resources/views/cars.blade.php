@@ -11,7 +11,7 @@
             <div class="myDesigns col-12 col-lg-2 text-center mt-2">
                 <a href="https://www.redbubble.com/people/nenad00x/shop?asc=u&ref=account-nav-dropdown"
                     target="blank">
-                        <h4></h4></a>
+                        <h4>My Shop</h4></a>
             </div>
 
               <h1 class="text-light col-12 col-md-8 offset-md-2 col-lg-8 offset-lg-0 text-center">
@@ -20,7 +20,7 @@
             <div class="myDesigns col-12 col-lg-2 text-center mt-2">
                 <a href="https://www.redbubble.com/people/nenad00x/shop?asc=u&ref=account-nav-dropdown"
                    target="blank">
-                        <h4></h4></a>
+                        <h4>My Shop</h4></a>
             </div>
         </div>
 

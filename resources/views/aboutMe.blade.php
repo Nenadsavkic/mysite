@@ -11,7 +11,7 @@
             <div class="myDesigns col-12 col-lg-2 text-center mt-2">
                 <a href="https://www.redbubble.com/people/nenad00x/shop?asc=u&ref=account-nav-dropdown"
                     target="blank">
-                        <h4></h4></a>
+                        <h4>My Shop</h4></a>
             </div>
 
               <h1 class="text-light col-12 col-md-8 offset-md-2 col-lg-8 offset-lg-0 text-center">
@@ -20,7 +20,7 @@
             <div class="myDesigns col-12 col-lg-2 text-center mt-2">
                 <a href="https://www.redbubble.com/people/nenad00x/shop?asc=u&ref=account-nav-dropdown"
                    target="blank">
-                        <h4></h4></a>
+                        <h4>My Shop</h4></a>
             </div>
         </div>
 
@@ -43,7 +43,7 @@
                 I worked as an operator on a CNC machine in the Shipyard, and warehouse jobs, then in security, and I am currently employed in
                 a manufacturing company of wooden furniture. </p>
                  <p>But dealing with these jobs, I have never seen myself in these professions for a long time,
-                I have not felt any personal satisfaction, or the possibility of growth and advancement in the company. About 2 years ago,
+                I have not felt any personal satisfaction, or the possibility of growth and advancement in the company. About 5 years ago,
                 out of pure curiosity, I made my first steps in the field of programming. It was pretty clamsy,  because I didn’t
                 even know where I should start. Nobody told me that before learning Php, you should first master HTML and CSS. Like I said the
                 first steps were out of curiosity, to see if it suits to me, can I learn that. And then I saw that I liked it, and that maybe

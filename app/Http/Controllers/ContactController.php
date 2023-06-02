@@ -34,7 +34,7 @@ class ContactController extends Controller
             'user_query' => $request->get('message'),
         ), function($message) use ($request){
             $message->from($request->email);
-            $message->to('savkicn@gmail.com', 'Admin');
+            $message->to('contact@nenadsavkic.net', 'Admin');
         });
 
         return back()->with('message', 'Your email is sent.');

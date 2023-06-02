@@ -11,7 +11,7 @@
             <div class="myDesigns col-12 col-lg-2 text-center mt-2">
                 <a href="https://www.redbubble.com/people/nenad00x/shop?asc=u&ref=account-nav-dropdown"
                     target="blank">
-                        <h4></h4></a>
+                        <h4>My Shop</h4></a>
             </div>
 
               <h1 class="text-light col-12 col-md-8 offset-md-2 col-lg-8 offset-lg-0 text-center">
@@ -20,7 +20,7 @@
             <div class="myDesigns col-12 col-lg-2 text-center mt-2">
                 <a href="https://www.redbubble.com/people/nenad00x/shop?asc=u&ref=account-nav-dropdown"
                    target="blank">
-                        <h4></h4></a>
+                        <h4>My Shop</h4></a>
             </div>
         </div>
 
@@ -46,7 +46,7 @@
                 a trenutno sam zaposlen u jednoj firmi koja se bavi proizvodnjom nameštaja.
                 Ali baveći se ovim poslovima, nikada nisam video sebe dugoročno u tim profesijama,
                 nisam osetio nikakvu ličnu satisfakciju, niti mogućnost rasta i napredovanja u kompaniji.
-                Pre oko 2 godine, iz čiste radoznalosti, napravio sam svoje prve korake iz oblasti programiranja.
+                Pre oko 5 godina, iz čiste radoznalosti, napravio sam svoje prve korake iz oblasti programiranja.
                 Bilo je to prilično nespretno, da tako kažem, jer nisam znao ni odakle bih trebao početi.
                 Niko mi nije rekao da pre učenja Php-a, treba prvo savladati HTML i CSS. Kao što rekoh
                 prvi koraci bili su iz radoznalosti, da vidim da li to meni "leži", da li ja to mogu da naučim,

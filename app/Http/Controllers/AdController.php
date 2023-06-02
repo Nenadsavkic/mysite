@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Auth;
 
 class AdController extends Controller
 {
+
      public function index($id)
      {
          // Increment views

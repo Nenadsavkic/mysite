@@ -85,3 +85,8 @@ Route::delete('/deleteProfile/{id}', [UsersController::class, 'deleteProfile']) 
 ->name('deleteProfile');
 
 Route::delete('/delete-users/{id}', [UsersController::class, 'deleteUser'])->name('deleteUser'); // Brisanje korisnika admin opcija
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
