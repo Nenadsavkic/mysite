@@ -185,7 +185,7 @@
 </div>
 
 @endsection
-@section('page-scripts')
+@section('page-scripts1')
 
    <script>
 

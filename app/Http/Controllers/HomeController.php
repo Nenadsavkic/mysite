@@ -20,7 +20,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth', ['except' => ['welcome','contactForm','home','aboutMe']]);
+        $this->middleware('auth', ['except' => ['welcome','contactForm','home','aboutMe', 'myDesigns']]);
     }
 
     /**
