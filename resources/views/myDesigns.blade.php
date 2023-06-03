@@ -41,7 +41,7 @@
             Something I've been doing for some time now,
             partly as a hobby and partly professionally, in the hope that the
             second will prevail in the end. <br><br>
-            Click on image to zoom in.</strong></p>
+            Click on image to zoom in or 'Right Click' + 'Open image in new tab'.</strong></p>
     </div>
 
 </div>
