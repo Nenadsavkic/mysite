@@ -18,7 +18,7 @@
                      <li class=" nav-item mr-3">
                         <a href="{{ route('aboutMe') }}" class="nav-link">About me</a>
                      </li>
-               
+
                      <li class=" nav-item mr-3">
                         <a href="{{ route('cars') }}" class="nav-link">Cars</a>
                      </li>
@@ -31,12 +31,15 @@
 
                     <li class=" nav-item mr-3">
                        <a href="{{ route('contactForm') }}" class="nav-link">Contact</a>
-		    </li>
+		            </li>
                      @if (auth()->check())
                     <li class=" nav-item mr-3">
                         <a href="{{ route('home') }}" class="nav-link">My page</a>
                     </li>
                     @endif
+                    <li class=" nav-item mr-3">
+                        <a href="{{ route('myDesigns') }}" class="nav-link">My Designs</a>
+                     </li>
 
             </ul>
 

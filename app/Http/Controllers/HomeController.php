@@ -46,6 +46,10 @@ class HomeController extends Controller
     {
         return view('aboutMe');
     }
+    public function myDesigns()
+    {
+       return view('myDesigns');
+    }
     public function contactForm(Request $request)
     {
 
@@ -55,7 +59,7 @@ class HomeController extends Controller
     }
 
     public function emailContact(Request $request) {
-	    
+
         $data = [];
         $this->validate($request, [
             'name' => 'required',
@@ -75,10 +79,10 @@ class HomeController extends Controller
             $message->from($data['name']);
             $message->from($data['email']);
             $message->to('savkicn@gmail.com');
-        });	
+        });
 
         return redirect()->back()->with('message', 'Your email is sent');
-    } 
+    }
 
     public function saveImg(Request $request)
     {
@@ -313,9 +317,9 @@ class HomeController extends Controller
     {
         $sender = User::find($request->sender_id);
         $ad = Ad::find($request->ad_id);
-	
+
 	// $ad_name = Ad::find($request->ad_name);
-	
+
 	$request->validate([
 
         'body' => 'required',
@@ -359,5 +363,7 @@ class HomeController extends Controller
 
        return redirect(route('home'));
    }
+
+
 
 }

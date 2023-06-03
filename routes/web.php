@@ -32,6 +32,8 @@ Route::get('/home-single-ad/{id}', [AdController::class, 'showSingleAd']) // Sin
 ->name('singleAd');
 Route::get('/showAllUsers', [UsersController::class, 'showAllUsers'])  // Prikaz svih korisnika (Usera)
 ->name('showAllUsers');
+Route::get('/myDesigns', [HomeController::class, 'myDesigns'])->name('myDesigns');    // Pocetna (biografija)
+
 
 
 Route::get('/home-messages', [MessageController::class, 'showMessages']) // Prikaz poruke korisnika
