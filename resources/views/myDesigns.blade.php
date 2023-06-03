@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title')
-    O meni
+    My Designs
 @endsection
 
 @section('content-title')
