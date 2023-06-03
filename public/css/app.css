@@ -9472,7 +9472,7 @@ p {
   border-radius: 15px;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .fullsize {
     border: 11px solid grey;
     z-index: 999;
