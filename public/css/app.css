@@ -9472,14 +9472,16 @@ p {
   border-radius: 15px;
 }
 
-.fullsize {
-  border: 11px solid grey;
-  z-index: 999;
-  cursor: zoom-out;
-  display: block;
-  width: 800px !important;
-  height: 600px !important;
-  position: fixed;
-  left: 400px;
-  top: 80px;
+@media (min-width: 992px) {
+  .fullsize {
+    border: 11px solid grey;
+    z-index: 999;
+    cursor: zoom-out;
+    display: block;
+    width: 800px !important;
+    height: 600px !important;
+    position: fixed;
+    left: 400px;
+    top: 80px;
+  }
 }
