@@ -35,7 +35,7 @@
 
 <div class="row">
     <div class="col-md-8 offset-md-2">
-        <h2 class="text-center bold"><strong>Welcome on my Graphic Design page</strong></h2>
+        <h2 class="text-center bold mt-5"><strong>Welcome on my Graphic Design page</strong></h2>
         <p class="text-center mt-5"><strong>Hello, on this page you can see some of my Graphic Design works
             in Adobe Illustrator, InDesign and Photoshop.
             Something I've been doing for some time now,
@@ -185,7 +185,7 @@
 </div>
 
 @endsection
-@section('page-scripts1')
+@section('page-scripts')
 
    <script>
 
