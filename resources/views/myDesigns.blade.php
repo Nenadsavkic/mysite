@@ -178,6 +178,22 @@
         <img src="/images/design_images/32.png" class="img-fluid thumb small-img" style="width: 100%"
         onclick="change(this)">
     </div>
+     <div class="col-md-3 mt-3">
+        <img src="/images/design_images/33.png" class="img-fluid thumb small-img" style="width: 100%"
+        onclick="change(this)">
+    </div>
+     <div class="col-md-3 mt-3">
+        <img src="/images/design_images/34.png" class="img-fluid thumb small-img" style="width: 100%"
+        onclick="change(this)">
+    </div>
+     <div class="col-md-3 mt-3">
+        <img src="/images/design_images/35.png" class="img-fluid thumb small-img" style="width: 100%"
+        onclick="change(this)">
+    </div>
+     <div class="col-md-3 mt-3">
+        <img src="/images/design_images/36.png" class="img-fluid thumb small-img" style="width: 100%"
+        onclick="change(this)">
+    </div>
 
 
 </div>
