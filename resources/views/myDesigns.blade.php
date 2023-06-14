@@ -49,41 +49,41 @@
 
 
     <div class="col-md-3 mt-3">
-        <img src="/images/design_images/1.png" class="img-fluid thumb small-img" style="width: 100%"
+        <img src="/images/design_images/01.png" class="img-fluid thumb small-img" style="width: 100%"
         onclick="change(this)">
    </div>
     <div class="col-md-3 mt-3">
-         <img src="/images/design_images/2.jpg" class="img-fluid thumb small-img" style="width: 100%"
+         <img src="/images/design_images/02.jpg" class="img-fluid thumb small-img" style="width: 100%"
          onclick="change(this)">
     </div>
 
     <div class="col-md-3 mt-3">
-        <img src="/images/design_images/3.jpg" class="img-fluid thumb small-img" style="width: 100%"
+        <img src="/images/design_images/03.jpg" class="img-fluid thumb small-img" style="width: 100%"
         onclick="change(this)">
     </div>
 
     <div class="col-md-3 mt-3">
-        <img src="/images/design_images/4.jpg" class="img-fluid thumb small-img" style="width: 100%"
+        <img src="/images/design_images/04.jpg" class="img-fluid thumb small-img" style="width: 100%"
         onclick="change(this)">
     </div>
     <div class="col-md-3 mt-3">
-        <img src="/images/design_images/5.jpg" class="img-fluid thumb small-img" style="width: 100%"
+        <img src="/images/design_images/05.jpg" class="img-fluid thumb small-img" style="width: 100%"
         onclick="change(this)">
     </div>
     <div class="col-md-3 mt-3">
-        <img src="/images/design_images/6.jpg" class="img-fluid thumb small-img" style="width: 100%"
+        <img src="/images/design_images/06.jpg" class="img-fluid thumb small-img" style="width: 100%"
         onclick="change(this)">
     </div>
     <div class="col-md-3 mt-3">
-        <img src="/images/design_images/7.jpg" class="img-fluid thumb small-img" style="width: 100%"
+        <img src="/images/design_images/07.jpg" class="img-fluid thumb small-img" style="width: 100%"
         onclick="change(this)">
     </div>
     <div class="col-md-3 mt-3">
-        <img src="/images/design_images/8.jpg" class="img-fluid thumb small-img" style="width: 100%"
+        <img src="/images/design_images/08.jpg" class="img-fluid thumb small-img" style="width: 100%"
         onclick="change(this)">
     </div>
     <div class="col-md-3 mt-3">
-        <img src="/images/design_images/9.png" class="img-fluid thumb small-img" style="width: 100%"
+        <img src="/images/design_images/09.png" class="img-fluid thumb small-img" style="width: 100%"
         onclick="change(this)">
     </div>
     <div class="col-md-3 mt-3">
