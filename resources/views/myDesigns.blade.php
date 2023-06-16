@@ -47,13 +47,26 @@
 </div>
 <div class="row">
 
-    @for ($i = 1; $i < 37; $i++)
+    {{-- @for ($i = 1; $i < $counter; $i++)
     <div class="col-md-3 mt-3">
         <img src="/images/design_images/{{ $i.'.png'}}"
         class="img-fluid thumb small-img" style="width: 100%"
         onclick="change(this)">
    </div>
-    @endfor
+    @endfor --}}
+
+    @foreach(File::glob(public_path('images/design_images').'/*') as $path)
+        <div class="col-md-3 mt-3">
+        <img src="{{ str_replace(public_path(), '', $path) }}"
+        class="img-fluid thumb small-img" style="width: 100%"
+            onclick="change(this)">
+        </div>
+
+    @endforeach
+
+
+
+
 
 
 </div>
