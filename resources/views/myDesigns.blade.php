@@ -41,7 +41,8 @@
             Something I've been doing for some time now,
             partly as a hobby and partly professionally, in the hope that the
             second will prevail in the end. <br><br>
-            Click on image to zoom in.</strong></p>
+            <span id="zoom">Click on image to zoom in</span>
+            </strong></p>
     </div>
 
 </div>

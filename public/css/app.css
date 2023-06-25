@@ -9472,6 +9472,10 @@ p {
   border-radius: 15px;
 }
 
+#zoom {
+  display: none;
+}
+
 @media (min-width: 1200px) {
   .fullsize {
     border: 11px solid grey;
@@ -9483,5 +9487,8 @@ p {
     position: fixed;
     left: 400px;
     top: 80px;
+  }
+  #zoom {
+    display: block;
   }
 }
