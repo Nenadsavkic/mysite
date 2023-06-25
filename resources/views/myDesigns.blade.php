@@ -49,7 +49,7 @@
 <div class="row">
 
     @foreach(File::glob(public_path('images/design_images').'/*') as $path)
-        <div class="col-md-3 mt-3">
+        <div class="col-sm-6 col-lg-4 col-xl-3 mt-3">
         <img src="{{ str_replace(public_path(), '', $path) }}"
         class="img-fluid thumb small-img" style="width: 100%"
             onclick="change(this)">
