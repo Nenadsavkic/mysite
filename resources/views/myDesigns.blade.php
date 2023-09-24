@@ -36,11 +36,10 @@
 <div class="row">
     <div class="col-md-8 offset-md-2">
         <h2 class="text-center bold mt-5"><strong>Welcome on my Graphic Design page</strong></h2>
-        <p class="text-center mt-5"><strong>Hello, on this page you can see some of my Graphic Design works
-            in Adobe Illustrator, InDesign and Photoshop.
-            Something I've been doing for some time now,
-            partly as a hobby and partly professionally, in the hope that the
-            second will prevail in the end. <br><br>
+        <p class="text-center mt-5"><strong>
+        Hello, on this page you can see some of my Graphic Design works
+            in Adobe Illustrator, InDesign and Photoshop. My narrow specialty is editing and retouching
+            images in Photoshop.<br><br>
             <span id="zoom">Click on image to zoom in</span>
             </strong></p>
     </div>
